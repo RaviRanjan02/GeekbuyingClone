@@ -4,9 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shopping cart</title>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+    .Shopping-geeklogo>img{
+       width: 200px;
+      }
+      .Shopping-top{
+          width: 100%;
+      }
+      .Shopping-middle{
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 50px !important;
+      }
+      .Shopping-bottom{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      .details{
+          display: flex;
+          justify-content: space-between;
+      }
+      .details>div{
+          width: 50%;
+      }
+      .left{
+          display: flex;
+          justify-content: space-between;
+      }
+      .cart-items{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+      }
+      .cart-item-image>img{
+          width: 90px;
+          height: 90px;
+      }
+      .cart-item-product-name{
+          width: 431px;
+          height: 44px;
+      }
+      .button-container{
+	display: flex;
+	align-items: center;
+}
+.button-container .form-control{
+	max-width: 80px;
+	text-align: center;
+	display: inline-block;
+	margin: 0px 5px;
+}
+.cart-item-box{
+    display: flex;
+    flex-direction: column;
+}
+.cart-subtotal{
+    display: flex;
+    justify-content: space-between;
+}
+    </style>
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
+  <div class="Shopping-top">
+   <div class="Shopping-geeklogo"><img src="https://www.shareasale.com/images/logo2016_1.jpg" alt=""></div>
+
+  </div>  
+  <div class="Shopping-middle">
+  <div><h3>Product Name & Detail</h3></div>
+  <div class="details">
+ <div class="right">
+     <div>Product Name & Detail</div>
+ </div>
+ <div class="left">
+     <div>Unit Price</div>
+     <div>Quantity</div>
+     <div>Total</div>
+     <div>Operation</div>
+ </div>
+  </div>
+  <div class="itemsadd">
+    <p>Ship From:China ( <span class="cart-itemscount">2</span>Items)</p>  
+    <div class="cart-item-box">
+        <div class="cart-items">
+            <div class="cart-item-image"><img src="https://img.gkbcdn.com/p/2021-08-11/huawei-m-pencil-2nd-generation-1628672321898._w280_.jpg" alt=""></div>
+            <div class="cart-item-product-name">Original Xiaomi stylus Pen for Mi Pad 5/ Mi Pad 5 Pro 4096 Level Pressure 240Hz Sampling Rate 152mm 12.2g - Black</div>
+            <div>₹ 6516.55</div>
+            <div><div class="button-container">
+                <button class="cart-qty-plus" type="button" value="+">+</button>
+                <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                <button class="cart-qty-minus" type="button" value="-">-</button>
+            </div></div>
+            <div>₹ 6516.55</div>
+            <div><button>Wishlist
+                Delete</button></div>
+        </div>
+        <div class="cart-items">
+            <div class="cart-item-image"><img src="https://img.gkbcdn.com/p/2021-08-11/huawei-m-pencil-2nd-generation-1628672321898._w280_.jpg" alt=""></div>
+            <div class="cart-item-product-name">Original Xiaomi stylus Pen for Mi Pad 5/ Mi Pad 5 Pro 4096 Level Pressure 240Hz Sampling Rate 152mm 12.2g - Black</div>
+            <div>₹ 6516.55</div>
+            <div><div class="button-container">
+                <button class="cart-qty-plus" type="button" value="+">+</button>
+                <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                <button class="cart-qty-minus" type="button" value="-">-</button>
+            </div></div>
+            <div>₹ 6516.55</div>
+            <div><button>Wishlist
+                Delete</button></div>
+        </div>
+    </div>
+    <div class="cart-subtotal">
+        <div>Select All</div>
+        <div>Add to Wishlist</div>
+        <div>Delete</div>
+        <div>Your Subtotal: ₹ 8086.21</div>
+    </div>
+  </div>
+  </div>  
+  <div class="Shopping-bottom" >
+   <div>Continue Shopping</div>
+   <div>You choose 2 item(s)</div>
+   <div>Total : ₹ 8086.21</div>
+   <div><img src="https://content1.geekbuying.com/V1.4/en/images/cartImg/new_pp.png" alt=""></div>
+   <div><button>Proceed to Checkout</button></div>
+  </div>  
 </body>
 </html>
+
+<script>
+    //----------------for quantity-increment-or-decrement-------
+var incrementQty;
+var decrementQty;
+var plusBtn  = $(".cart-qty-plus");
+var minusBtn = $(".cart-qty-minus");
+var incrementQty = plusBtn.click(function() {
+	var $n = $(this)
+		.parent(".button-container")
+		.find(".qty");
+	$n.val(Number($n.val())+1 );
+	update_amounts();
+});
+
+var decrementQty = minusBtn.click(function() {
+		var $n = $(this)
+		.parent(".button-container")
+		.find(".qty");
+	var QtyVal = Number($n.val());
+	if (QtyVal > 0) {
+		$n.val(QtyVal-1);
+	}
+	update_amounts();
+});
+
+</script>
