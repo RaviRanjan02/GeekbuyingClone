@@ -214,9 +214,9 @@
                 <div style="background-color: blue; width: 90px;height: 15px;padding: 8px;"><i class="fas fa-search"></i></div>
             </div>
             <div id="head2onethree">
-                <div><i class="far fa-user" style="color: blue;"></i>Sign in</div>
-                <div><i class="far fa-heart" style="color: blue;height: 200px;"></i>Wislist</div>
-                <div><i class="fas fa-cart-plus" style="color: blue;"></i>Cart</div> </div>
+                <div id="sing_in"><i class="far fa-user" style="color: blue;"></i>Sign in</div>
+                <div id="wislist"><i class="far fa-heart" style="color: blue;height: 200px;"></i>Wislist</div>
+                <div id="cart"><i class="fas fa-cart-plus" style="color: blue;"></i>Cart</div> </div>
             </div>
             <div id="head2two"> 
             <div id="head2twoone"><select style="border: 0px;"> 
@@ -289,3 +289,8 @@
     </div>
 </body>
 </html>
+<script>
+     document.querySelector("#sing_in").addEventListener("click" , function(){
+        window.location.href="login.html";
+    })
+</script>
