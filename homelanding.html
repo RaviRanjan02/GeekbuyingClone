@@ -414,12 +414,12 @@ line-height: 30px;
             </div>
             <div id="head2two"> 
             <div id="head2twoone">
-                <select style="border: 0px;"> 
+                <select id="productpage" style="border: 0px;"> 
                     <option value="">Shop all Categories</option>
-                    <option value="">Local Wearhouse</option>
-                    <option value="">Smart home and Garden</option>
-                    <option onselect="window.location.href='sports&outdoors.html'">sports and Outdoors</option>
-                    <option value="">Customer Electronics</option>
+                    <option value="gdhdhdh">Local Wearhouse</option>
+                    <option value="shdjdjjdjdjd">Smart home and Garden</option>
+                    <option value="sports&outdoors.html">sports and Outdoors</option>
+                    <option value="dgdhddjjd">Customer Electronics</option>
                     <option value="">Tv Boxes and mini piece</option>
                     <option value="">Computers Tablest and Accessories</option>
                     <option value="">Toys and Hobbies</option>
@@ -606,12 +606,19 @@ line-height: 30px;
         window.location.href="login.html";
     })
     document.querySelector("#wishlist").addEventListener("click" , function(){
-        window.location.href="wishlist.html";
+        window.location.href="wishpage.html";
     })
     document.querySelector("#cart").addEventListener("click" , function(){
         window.location.href="cart.html";
     })
+      var selectvalue = document.querySelector("#productpage");
+         var nnn= selectvalue.value;
+         console.log(nnn);
+    // document.querySelector("#productpage").addEventListener("change" , function(){
+    //     window.location.href="selectvalue";
+    // })
    
+
 
    var  productdata = [
         {
