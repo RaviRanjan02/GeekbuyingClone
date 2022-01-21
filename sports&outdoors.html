@@ -391,9 +391,9 @@ line-height: 30px;
                 <div style="background-color: blue; width: 90px;height: 15px;padding: 8px;"><i class="fas fa-search"></i></div>
             </div>
             <div id="head2onethree">
-                <div><i class="far fa-user" style="color: blue;"></i>Sign in</div>
-                <div><i class="far fa-heart" style="color: blue;height: 200px;"></i>Wislist</div>
-                <div><i class="fas fa-cart-plus" style="color: blue;"></i>Cart</div> </div>
+                <div id="sign_in"><i class="far fa-user" style="color: blue;"></i>Sign in</div>
+                <div id="wishlist"><i class="far fa-heart" style="color: blue;height: 200px;"></i>Wislist</div>
+                <div id="cart"><i class="fas fa-cart-plus" style="color: blue;"></i>Cart</div> </div>
             </div>
             <div id="head2two"> 
             <div id="head2twoone"><select style="border: 0px;"> 
@@ -611,6 +611,18 @@ line-height: 30px;
 
 
 <script>
+//    click function for login, wishlist, cart
+   document.querySelector("#sign_in").addEventListener("click" , function(){
+        window.location.href="login.html";
+    })
+    document.querySelector("#wishlist").addEventListener("click" , function(){
+        window.location.href="wishpage.html";
+    })
+    document.querySelector("#cart").addEventListener("click" , function(){
+        window.location.href="cart.html";
+    })
+    //   click function end
+
     productdata = [
         {
             image_url: "https://img.gkbcdn.com/p/2020-07-21/walkingpad-treadmill-r1-smart-folding-walking-and-running-machine-1595324388511._w280_p1_.jpg" ,
