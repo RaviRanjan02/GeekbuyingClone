@@ -6,45 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping cart</title>
     <style>
-        div{
-            border: 1px solid red;
-        }
+       /* div{
+           border: 1px solid red;
+       } */
     .Shopping-geeklogo>img{
        width: 200px;
+      
+      }
+      .Shopping-geeklogo{
+          text-align: center;
       }
       .Shopping-top{
           width: 100%;
+          display: flex;
+          justify-content: space-around;
+          
       }
       .Shopping-middle{
           width: 90%;
           margin: 0 auto;
           margin-top: 50px !important;
+          font-family: "Open Sans", sans-serif;
       }
       .Shopping-bottom{
         width: 90%;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        padding: 10px;
+        padding: 50px;
+        font-family: "Open Sans", sans-serif;
       }
       .details{
           display: flex;
+          
           justify-content: space-between;
+          background-color: #F1F1F1;
+          color: #999999;
+          
       }
       .details>div{
           width: 50%;
       }
-      .left{
+      .details-right{
           display: flex;
-          justify-content: space-between;
+          align-items: center;
+          justify-content: space-evenly;
+          font-family: "Open Sans", sans-serif;
+          
       }
       .cart-items{
           display: flex;
-          justify-content: space-between;
+          justify-content: space-evenly;
           flex-wrap: nowrap;
+          padding: 30px;
       }
       .cart-item-image>img{
-          width: 90px;
+          width: 100%;
           height: 90px;
       }
       .cart-item-product-name{
@@ -69,20 +86,133 @@
     display: flex;
     justify-content: space-between;
 }
+.checkout>button{
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 240px;
+    height: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.cart-items-checkbox{
+    padding-top: 40px;
+}
+/* item added */
+.itemsadd{
+    background-color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+}
+.details-left{
+    width: 580px;
+    height: 45px;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+.cart-subtotal-button{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.cart-item-product-whislist>button{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    text-decoration: underline;
+
+}
+.cart-item-product-whislist>button:hover{
+    color: blue;
+    font-size: 15px;
+}
+.cart-item-product-total{
+    font-weight: bold;
+}
+#cart-subtotal-your{
+    font-weight: bold;
+}
+#cart-subtotal-your>span{
+    color: orangered;
+    font-weight: bold;
+    font-size: x-large;
+}
+#Shopping-bottom-total{
+    font-weight: bold;
+}
+#Shopping-bottom-total>span{
+    color: orangered;
+    font-weight: bold;
+    font-size: x-large;
+}
+#Shopping-bottom-you-choose{
+    color: grey;
+}
+#Shopping-bottom-you-choose>span{
+    color: black;
+    font-weight: bold;
+}
+#cart-subtotal-button>button{
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    color: grey;
+}
+#cart-subtotal-button>button:hover{
+    color: blue;
+    font-size: large;
+    
+}
+.cart-qty-plus{
+    background-color: transparent;
+    border: 1px solid grey ;
+}
+.cart-qty-minus{
+    background-color: transparent;
+    border: 1px solid grey ;
+}
+#Shopping-bottom-continue>button:hover{
+   color:blue;
+   font-size: large;
+   
+   
+}
+#Shopping-bottom-continue>button{
+    background-color: transparent;
+    border: 1px;
+    color: grey;
+}
+.itemsadd{
+    border: 1px solid grey;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+.itemsadd>p{
+    padding-left: 20px;
+}
+.cart-subtotal{
+    border-top: 1px solid grey;
+    padding: 10px;
+}
+
     </style>
 </head>
 <body>
   <div class="Shopping-top">
    <div class="Shopping-geeklogo"><img src="https://www.shareasale.com/images/logo2016_1.jpg" alt=""></div>
-
+   <!-- <div class="cartprocess"><img src="./images/cartprocess.png" alt=""></div> -->
   </div>  
   <div class="Shopping-middle">
   <div><h3>Product Name & Detail</h3></div>
   <div class="details">
- <div class="right">
+ <div class="details-left">
      <div>Product Name & Detail</div>
  </div>
- <div class="left">
+ <div class="details-right">
      <div>Unit Price</div>
      <div>Quantity</div>
      <div>Total</div>
@@ -90,50 +220,137 @@
  </div>
   </div>
   <div class="itemsadd">
-    <p>Ship From:China ( <span class="cart-itemscount">2</span>Items)</p>  
+    <p>Ship From:China ( <span class="cart-itemscount">Count</span> Items)</p>  
     <div class="cart-item-box">
+       <!-- <div class="cart-items"> -->
+            <!-- <div class="cart-items-checkbox"><input type="checkbox"></div>
+            <div class="cart-item-image"><img src="https://freepngimg.com/save/62837-instagram-icons-photography-computer-logo-icon/512x512" alt=""></div>
+            <div class="cart-item-product-name">Original Xiaomi stylus Pen for Mi Pad 5/ Mi Pad 5 Pro 4096 Level Pressure 240Hz Sampling Rate 152mm 12.2g - Black</div>
+            <div class="cart-item-product-price">₹ 6516.55</div>
+            <div><div class="button-container">
+                <button class="cart-qty-plus" type="button" value="+">+</button>
+                <input type="text" name="qty" min="1" class="qty form-control" value="1"/>
+                <button class="cart-qty-minus" type="button" value="-">-</button>
+            </div></div>
+            <div class="cart-item-product-total">₹ 6516.55</div>
+            <div class="cart-item-product-whislist"><button>Wishlist  Delete</button></div>
+        </div>
         <div class="cart-items">
+            <div class="cart-items-checkbox"><input type="checkbox"></div>
             <div class="cart-item-image"><img src="https://img.gkbcdn.com/p/2021-08-11/huawei-m-pencil-2nd-generation-1628672321898._w280_.jpg" alt=""></div>
             <div class="cart-item-product-name">Original Xiaomi stylus Pen for Mi Pad 5/ Mi Pad 5 Pro 4096 Level Pressure 240Hz Sampling Rate 152mm 12.2g - Black</div>
-            <div>₹ 6516.55</div>
+            <div class="cart-item-product-price">₹ 6516.55</div>
             <div><div class="button-container">
                 <button class="cart-qty-plus" type="button" value="+">+</button>
                 <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
                 <button class="cart-qty-minus" type="button" value="-">-</button>
             </div></div>
-            <div>₹ 6516.55</div>
-            <div><button>Wishlist
+            <div class="cart-item-product-total">₹ 6516.55</div>
+            <div class="cart-item-product-whislist"><button>Wishlist
                 Delete</button></div>
-        </div>
-        <div class="cart-items">
-            <div class="cart-item-image"><img src="https://img.gkbcdn.com/p/2021-08-11/huawei-m-pencil-2nd-generation-1628672321898._w280_.jpg" alt=""></div>
-            <div class="cart-item-product-name">Original Xiaomi stylus Pen for Mi Pad 5/ Mi Pad 5 Pro 4096 Level Pressure 240Hz Sampling Rate 152mm 12.2g - Black</div>
-            <div>₹ 6516.55</div>
-            <div><div class="button-container">
-                <button class="cart-qty-plus" type="button" value="+">+</button>
-                <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
-                <button class="cart-qty-minus" type="button" value="-">-</button>
-            </div></div>
-            <div>₹ 6516.55</div>
-            <div><button>Wishlist
-                Delete</button></div>
-        </div>
+        </div> -->
     </div>
     <div class="cart-subtotal">
-        <div>Select All</div>
-        <div>Add to Wishlist</div>
-        <div>Delete</div>
-        <div>Your Subtotal: ₹ 8086.21</div>
+        <div id="cart-subtotal-button"><button> <span><input type="checkbox"></span>  Select All</button></div>
+        <div id="cart-subtotal-button"><button>Add to Wishlist</button></div>
+        <div id="cart-subtotal-button"><button>Delete</button></div>
+        <div id="subTOTAL" style="padding-right: 30px;">subtotal</div>
+        <!-- <div id="cart-subtotal-your">Your Subtotal: ₹<span></span></div> -->
     </div>
   </div>
   </div>  
   <div class="Shopping-bottom" >
    <div>Continue Shopping</div>
-   <div>You choose 2 item(s)</div>
-   <div>Total : ₹ 8086.21</div>
+   <div id="Nub">SButton</div>
+   <div id="TOTAL">total</div>
+   <!-- <div id="Shopping-bottom-continue"> <button>Continue Shopping</button></div>
+   <div id="Shopping-bottom-you-choose">You choose <span>Count</span> item(s)</div>
+   <div id="Shopping-bottom-total">Total : <span>₹ 8086.21</span></div> -->
    <div><img src="https://content1.geekbuying.com/V1.4/en/images/cartImg/new_pp.png" alt=""></div>
-   <div><button>Proceed to Checkout</button></div>
+   <div class="checkout"><button >Proceed to Checkout</button></div>
   </div>  
 </body>
+<script>
+     var cartarr = JSON.parse(localStorage.getItem("cartitems"))||[];
+                 displaycartitem(cartarr);
+         
+         function displaycartitem(cartarr){
+            document.querySelector(".cart-item-box").textContent="";
+             cartarr.map(function(a){
+               var DIV = document.createElement("div");
+               DIV.setAttribute("class","cart-items"); 
+             
+             var checkDiv = document.createElement("div");
+             checkDiv.setAttribute("class","cart-items-checkbox");
+             var checkIn = document.createElement("input");
+               checkIn.setAttribute("type","checkbox");
+               checkDiv.append(checkIn);
+                
+                var Div2 = document.createElement("div");
+                Div2.setAttribute("class","cart-item-image");
+                var Img = document.createElement("img");
+                Img.setAttribute("src", a.image_url);
+                Div2.append(Img);
+
+                var Div3=document.createElement("div");
+                Div3.setAttribute("class","cart-item-product-name");
+                Div3.textContent= a.name;
+
+                var Div4=document.createElement("div");
+                Div4.setAttribute("class","cart-item-product-price");
+                Div4.textContent= a.price;
+
+                var Div5 =document.createElement("div");
+                var InerDiv=document.createElement("div");
+                 InerDiv.setAttribute("class","button-container");
+                  var Button1 = document.createElement("button");
+                  Button1.setAttribute("class","cart-qty-plus");
+                  Button1.setAttribute("value","+");
+                  Button1.setAttribute("type","button");
+                  Button1.textContent="+";
+                  var Input = document.createElement("input");
+                  Input.setAttribute("type","text");
+                  Input.setAttribute("class","qty form-control");
+                  Input.setAttribute("value","1");
+                  var Button2 = document.createElement("button");
+                  Button2.setAttribute("class","cart-qty-minus");
+                  Button2.setAttribute("value","-");
+                  Button2.setAttribute("type","button");
+                  Button2.textContent="-";
+                  InerDiv.append(Button1,Input,Button2);
+                   Div5.append(InerDiv);
+                   
+                   var Div6=document.createElement("div");
+                   Div6.setAttribute("class","cart-item-product-total");
+                   Div6.textContent=a.price;
+
+                   var Div7 =document.createElement("div");
+                   Div7.setAttribute("class","cart-item-product-wishlist");
+                   var DivButton = document.createElement("button");
+                   DivButton.textContent="Wishlist Delete";
+                   Div7.append(DivButton);
+                  
+                   DIV.append(checkDiv,Div2,Div3,Div4,Div5,Div6,Div7);
+                   document.querySelector(".cart-item-box").append(DIV);
+                              
+
+             });
+               var Count= document.querySelector(".cart-itemscount");
+                 Count.textContent=cartarr.length;
+
+                 var SButton =document.querySelector("#Nub");
+                 SButton.textContent=`You choose ${cartarr.length} item(s)`;
+                  
+                 var X= cartarr.reduce(function(acc,cv){
+                             return acc + +cv.price;
+                    },0);
+                 var total = document.querySelector("#TOTAL");
+                 total.textContent=`Total : ₹ ${X}`;
+                 var subtotal =document.querySelector("#subTOTAL");
+                   subtotal.textContent=`Your Subtotal: ${X}`;
+                    
+
+         }
+</script>
 </html>
 

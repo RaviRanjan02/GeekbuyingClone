@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sports&outdoors</title>
+    <script src="https://kit.fontawesome.com/08db62848f.js" crossorigin="anonymous"></script>
     <style>
            #header{
             width: 100%;
@@ -194,8 +195,155 @@
        #divhover:hover{
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
+      #wishlistbtn{
+          border: 0px;
+          background-color: white; 
+          margin: 10px 0 0 0 ;
+      }
           
+    /*   footer section  */
+    .footer-main{
+      width: 100%;
+      padding-top: 50px;
+}
+.footer-div{
+    width: 85%;
+    margin: 10px auto;
+}
+.footer-inner{
+     width: 100%;
+     margin: 0px auto;
+     height: 400px;
+     display: flex;
+     justify-content: space-between;
+}
+.footer-inner>div{
+   
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-inner>div>div:nth-child(1){
+    height: 15%;
+}
+
+.footer-popular{
+    width: 100%;
+    display: flex;
+    margin: 10px auto;
+}
+.footer-popular>div{
+    margin: 5px;
+    background-color: rgb(219, 217, 217);
+    border-radius: 3px;
+    padding: 3px;
+    color: grey;
+}
+.footer-popular>div:hover{
+    color: blue;
+}
+
+.footer-input>input{
+    width: 70%;
+    padding: 5px 0px;
+    margin-right: 0px;
+    border-radius: 3px;
+}
+.footer-input>button{
+    padding: 5px 15px;
+    background-color: #074EA3;
+    color: #ffff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 3px;
     
+}
+.footer-copyright>p{
+    margin-top: 10px;
+    padding: 5px;
+    color: rgb(105, 104, 104);
+}
+.footer-copyright{
+    background-color:#202020;
+    text-align: center;
+    height: 30px;
+    
+    
+}
+.footer-payment{
+    display: flex;
+    
+}
+.footer-lang>p{
+text-align: center;
+color: rgb(187, 185, 185);
+}
+.footer-right-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.footer-right-top-left{
+    display: flex;
+}
+.footer-right-top-left>div{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.footer-right-top-left>div>img{
+    width: 20px;
+    height: 20px;
+}
+.footer-right-top-right{
+    display: flex;
+}
+.footer-right-top-right>div{
+    margin-right: 25px;
+    margin-top: 5px;
+    justify-content: center;
+    text-align: center;
+}
+.footer-right-top-right>div>img{
+    width: 20px;
+    height: 20px;
+}
+.footer-right-top-right>div>span{
+    display: block;
+}
+.footer-right-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.footer-right-bottom-left>p:hover{
+    color: rgb(72, 72, 253);
+}
+.footer-right-bottom-center>p:hover{
+    color: rgb(72, 72, 253);
+}
+.footer-right-bottom-right>p:hover{
+    color: rgb(72, 72, 253);
+}
+.footer-left-bottom>p{
+color: rgb(136, 135, 135);
+font-family: "Open Sans", sans-serif;
+font-size: 12px;
+line-height: 30px;
+}
+.footer-right-top-right>div>p{
+    line-height: 0px;
+
+}
+.footer-right-top-right>div>p:hover{
+    color: blue;
+}
+.footer-right-top-left>div>img:hover{
+    width: 23px;
+    height: 23px;
+}
 
     </style>
 </head>
@@ -243,9 +391,9 @@
                 <div style="background-color: blue; width: 90px;height: 15px;padding: 8px;"><i class="fas fa-search"></i></div>
             </div>
             <div id="head2onethree">
-                <div><i class="far fa-user" style="color: blue;"></i>Sign in</div>
-                <div><i class="far fa-heart" style="color: blue;height: 200px;"></i>Wislist</div>
-                <div><i class="fas fa-cart-plus" style="color: blue;"></i>Cart</div> </div>
+                <div id="sign_in"><i class="far fa-user" style="color: blue;"></i>Sign in</div>
+                <div id="wishlist"><i class="far fa-heart" style="color: blue;height: 200px;"></i>Wislist</div>
+                <div id="cart"><i class="fas fa-cart-plus" style="color: blue;"></i>Cart</div> </div>
             </div>
             <div id="head2two"> 
             <div id="head2twoone"><select style="border: 0px;"> 
@@ -336,11 +484,145 @@
         </div>
 
     </div>
+      <!-- footer section  -->
+      <div class="footer-main">
+        <div class="footer-div">
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <div class="footer-input">
+                        <input type="text" placeholder="Enter email to get 5% off coupon">
+                        <button>Subscribe</button>
+                    </div>
+                    <div class="footer-left-bottom">
+                        <h4>About Geekbuying</h4>
+                        <p>We at Geekbuying are all about making our customer's lives comfortable and smarter. 
+                            We have a massive selection of products and offer unbeatable prices. 
+                            If you are looking for the latest and the greatest product in categories 
+                            like smart home and outdoor gadgets,Geekbuying is where you should be.
+                            <br>
+                           Geekbuying is the ultimate shopping hub for new releases covering smart 
+                           home products like vacuum cleaners, fitness equipment like treadmills, 
+                           top of the line home and office furniture, outdoor items including e-bikes, 
+                           scooters, and other consumer goods like TV boxes, RC Toys and so much more! 
+                           Shop for your favorite brands and products today!</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                   <div class="footer-right-top">
+                       <div class="footer-right-top-left">
+                        <div >
+                            <img src="https://img.icons8.com/material-sharp/24/000000/facebook-f.png"/>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/material-rounded/24/000000/youtube-play.png"/>
+                        </div>
+                        <div>
+                            <img src="https://freepngimg.com/save/62837-instagram-icons-photography-computer-logo-icon/512x512"/>
+                        </div>
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeB2AoeJlkzKOVRWqC6SMiZB34yKHcRFufoyM7zbz3i0cEAYe0hOtex9I9PYS6w-aBliM&usqp=CAU"/>
+                        </div>
+                        <div>
+                            <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-twitter-1.png">
+                        </div>
+                       </div>
+                       <div class="footer-right-top-right">
+                        <div >
+                            <img src="https://cdn3.iconfinder.com/data/icons/devices-57/100/Smartphone-512.png"/>
+                            <p>Mobile</p>
+                            
+                        </div>
+                        <div>
+                            <img src="https://www.svgrepo.com/show/145061/android-logo.svg"/>
+                            <p>Anroid</p>
+                        </div>
+                        <div>
+                            <img src="data:image/png;base64,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"/>
+                            <p>IOS</p>
+                        </div>
+                       </div>
+                   </div> 
+                   <div class="footer-right-bottom">
+                    <div class="footer-right-bottom-left">
+                        <h4>Help</h4>
+                       <p>Order status</p>
+                       <p>About us</p>
+                       <p>Contact us</p>
+                       <p>Warranty</p>
+                       <p>FAQs</p>
+                       <p>Sitemap</p>
+    
+                    </div>
+                    <div class="footer-right-bottom-center">
+                        <h4>Support</h4>
+                        <p>Payment information</p>
+                        <p>Shipping guide</p>
+                        <p>Wholesale</p>
+                        <p>Affilliates</p>
+                        <p>Student discount</p>
+                        <p>Youth discount</p>
+                        <p>Request a sample</p>
+
+                    </div>
+                    <div class="footer-right-bottom-right">
+                        <h4>Policies</h4>
+                       <p>Terms & conditions</p>
+                       <p>Returns policy</p>
+                       <p>Privacy</p>
+                       <p>Declration</p>
+                       <p>Customs</p>
+
+                    </div>
+                   </div> 
+                    
+                    
+                </div>
+         </div>
+         <div>
+             <h4>Popular search</h4>
+             <div class="footer-popular">
+               
+                 <div>Geekbuying Coupon</div>
+                 <div> Roborock Q7 Max</div>
+                 <div>Tronsmart Bluetooth Speakers</div>
+                 <div>Windows Mini PC</div>
+                 <div>Android tv boxes</div>
+                 <div>LDS Robot Vaccum</div>
+                 <div>Electric Bike</div>
+                 <div>Oneplus 10 pro</div>
+                 
+           </div>
+         </div>
+         <div class="footer-lang">
+             <p>English | Español | Français | Deutsch | Italiano | Português | Nederlands | Polski | Русский | Türkçe | ελληνικά | Magyar | لعربية| עברית | ไทย | 日本語</p>
+         </div>
+         <div class="footer-payment">
+             <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/footicons.jpg" alt="">
+             <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/geek_reviews.jpg?v=20220111" alt="" width="150px">
+         </div>
+         <div class="footer-copyright">
+        <p>Copyright © 2012-2022 GeekBuying.com. All rights reserved.</p>
+         </div>
+        </div>
+
+    </div>
 </body>
 </html>
 
 
 <script>
+//    click function for login, wishlist, cart
+   document.querySelector("#sign_in").addEventListener("click" , function(){
+        window.location.href="login.html";
+    })
+    document.querySelector("#wishlist").addEventListener("click" , function(){
+        window.location.href="wishpage.html";
+    })
+    document.querySelector("#cart").addEventListener("click" , function(){
+        window.location.href="cart.html";
+    })
+    //   click function end
+
     productdata = [
         {
             image_url: "https://img.gkbcdn.com/p/2020-07-21/walkingpad-treadmill-r1-smart-folding-walking-and-running-machine-1595324388511._w280_p1_.jpg" ,
@@ -574,6 +856,10 @@
     var cartarr = JSON.parse(localStorage.getItem("cartitems"))||[]
      displaydata(productdata);
 
+    var  wishlistarr = JSON.parse(localStorage.getItem("wishlistarr"))||[]
+     displaydata(productdata);   
+
+
     function handlebrand(){
        var selected_brand = document.querySelector("#brandshort").value;
        console.log(selected_brand);
@@ -654,8 +940,16 @@
     addtocart(data);
  });
 
+ var btn2 = document.createElement("button");
+    btn2.setAttribute("id", "wishlistbtn");
+    btn2.innerHTML = '<i  class="far fa-heart"></i>';
+  
+    btn2.addEventListener("click",function(){
+    addtowishlist(data);
+ });
+
     //append
-    div.append(image, name,div2,div3,btn);
+    div.append(image, name,div2,div3,btn,btn2);
     document.querySelector(".box3").append(div);
   });
 }
@@ -667,4 +961,13 @@
   alert("added to cart successfully")
 }
 
+
+function  addtowishlist(data){
+    console.log(data);
+    wishlistarr.push(data);
+    localStorage.setItem("wishlistitems",JSON.stringify( wishlistarr));
+    alert("added to Wishlist successfully")
+
+  }
+  
 </script>

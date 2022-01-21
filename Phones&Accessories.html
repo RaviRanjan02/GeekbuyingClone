@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/08db62848f.js" crossorigin="anonymous"></script>
+    <style>
+           #header{
+            width: 100%;
+            height: 130px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+        }
+        #head1{
+            height: 30px;
+            display: flex;
+           margin-left: 695px;
+        }
+        #head1 > div{
+            margin: 5px 20px 0px 0px;
+        }
+        #head2{
+            border-top: 1px solid rgb(242,242,242);
+            height: 100px;
+        }
+        #head2one{
+            width: 100%;
+            height: 50%;
+            display: flex;
+        }
+        #head2onethree{
+            display: flex;
+        }
+        #head2oneone{
+            width: 25%;
+            text-align: right;
+            margin-top: -20px;
+            padding-right: 20px;
+            color: royalblue;
+        }
+        #head2onetwo{
+            display: flex;
+            width: 35%;
+            border: 2px solid blue;
+            margin: 8px 0px;
+        }
+        #head2onethree{
+            padding: 10px;
+            width: 25%;
+            justify-content: space-around;
+            margin-right: 120px;
+            margin-left: 100px;
+        }
+        #head2two{
+         width: 100%;
+         height: 49%;
+         display: flex;
+        }
+        #head2twoone{
+            width: 22%;
+            text-align: right;
+        }
+        #head2two > div{
+            margin: 10px;
+        }
+        
+        #container{
+            width: 85%;
+            /* border: 1px solid red; */
+            margin:  20px auto;
+        }
+        /* .nav{
+            width: 100%;
+            height: 100px;
+            border: 1px solid red;
+        } */
+        .top{
+            width: 100%;
+            height: 100px;
+        }
+        img{
+            width: 100%;
+        }
+        .bottom{
+            display: flex;
+        }
+        .card1{
+            border: 1px solid lightgray;
+            width: 20%;
+            height: 230px;
+            margin: 50px 0 0 0;
+            padding: 10px;
+        }
+        .card1>p{
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        .card2{
+            border: 1px solid lightgray;
+            width: 78%;
+            margin: 50px 0 0 20px;
+        }
+        .box1{
+            width: 100%;
+            height: 200px;
+            border: 1px solid lightgray;
+        }
+        .box1>img{
+            height: 100%;
+        }
+       .box2{
+           width: 100%;
+           height: 100px;
+           /* border: 1px soild red; */
+       }
+       .box2>div{
+           width: 90%;
+           height: 35px;
+           margin: 10px;
+           border: 1px solid white;
+       }
+       .brand{
+           display: flex;
+       }
+       .brand>div{
+           width: 100px;
+           height: 35px;
+           border: 1px solid lightgray;
+           margin-left: 10px;
+       }
+       .brand>div>img{
+           width: 100%;
+           height: 100%;
+       }
+       .filter{
+           display: flex;
+          
+       }
+       .filter>div{
+           border: 1px solid white;
+           margin-left: 20px;
+           text-align: center;
+           padding: 0 10px 0 10px;
+           width: 100px;
+       }
+       .filter>div:nth-child(2){
+           width: 200px;
+       }
+       .sortby{
+           display: flex;
+          
+       }
+       .sortby>div{
+           border: 1px solid white;
+           margin-left: 20px;
+           text-align: center;
+           padding: 0 10px 0 10px;
+           width: 100px;
+       }
+       .sortby>div:nth-child(2){
+           width: 200px;
+       }
+      .box3{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 40px 0 0 0;
+        padding: 20px;
+        border-top: 1px solid gray;
+      }
+      #flex {
+        display: flex;
+        margin: 0px;
+        border: 1px solid white;
+      }
+      #flex>h2{
+          margin: 0px;
+      }
+      #flex2{
+        display: flex;  
+        margin: 0px;
+        border: 1px solid white; 
+      }
+      #flex2>p{
+          margin-top: 0px;
+      }
+      #cartbtn{
+          background-color:#F5B041 ;
+          width: 100%;
+          border: 0px;
+          border-radius: 1px;
+          height: 30px;
+      }
+       #divhover:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #wishlistbtn{
+          border: 0px;
+          background-color: white; 
+          margin: 10px 0 0 0 ;
+      }
+          
+        /*   footer section  */
+    .footer-main{
+      width: 100%;
+      padding-top: 50px;
+}
+.footer-div{
+    width: 85%;
+    margin: 10px auto;
+}
+.footer-inner{
+     width: 100%;
+     margin: 0px auto;
+     height: 400px;
+     display: flex;
+     justify-content: space-between;
+}
+.footer-inner>div{
+   
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-inner>div>div:nth-child(1){
+    height: 15%;
+}
+
+.footer-popular{
+    width: 100%;
+    display: flex;
+    margin: 10px auto;
+}
+.footer-popular>div{
+    margin: 5px;
+    background-color: rgb(219, 217, 217);
+    border-radius: 3px;
+    padding: 3px;
+    color: grey;
+}
+.footer-popular>div:hover{
+    color: blue;
+}
+
+.footer-input>input{
+    width: 70%;
+    padding: 5px 0px;
+    margin-right: 0px;
+    border-radius: 3px;
+}
+.footer-input>button{
+    padding: 5px 15px;
+    background-color: #074EA3;
+    color: #ffff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 3px;
+    
+}
+.footer-copyright>p{
+    margin-top: 10px;
+    padding: 5px;
+    color: rgb(105, 104, 104);
+}
+.footer-copyright{
+    background-color:#202020;
+    text-align: center;
+    height: 30px;
+    
+    
+}
+.footer-payment{
+    display: flex;
+    
+}
+.footer-lang>p{
+text-align: center;
+color: rgb(187, 185, 185);
+}
+.footer-right-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.footer-right-top-left{
+    display: flex;
+}
+.footer-right-top-left>div{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.footer-right-top-left>div>img{
+    width: 20px;
+    height: 20px;
+}
+.footer-right-top-right{
+    display: flex;
+}
+.footer-right-top-right>div{
+    margin-right: 25px;
+    margin-top: 5px;
+    justify-content: center;
+    text-align: center;
+}
+.footer-right-top-right>div>img{
+    width: 20px;
+    height: 20px;
+}
+.footer-right-top-right>div>span{
+    display: block;
+}
+.footer-right-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.footer-right-bottom-left>p:hover{
+    color: rgb(72, 72, 253);
+}
+.footer-right-bottom-center>p:hover{
+    color: rgb(72, 72, 253);
+}
+.footer-right-bottom-right>p:hover{
+    color: rgb(72, 72, 253);
+}
+.footer-left-bottom>p{
+color: rgb(136, 135, 135);
+font-family: "Open Sans", sans-serif;
+font-size: 12px;
+line-height: 30px;
+}
+.footer-right-top-right>div>p{
+    line-height: 0px;
+
+}
+.footer-right-top-right>div>p:hover{
+    color: blue;
+}
+.footer-right-top-left>div>img:hover{
+    width: 23px;
+    height: 23px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="head1"> 
+        <div><select style="border: 0px;"><option>Save big with app!</option></select></div>
+       
+        <div><select style="border: 0px;" >
+            <option>Language</option> 
+            <option>English</option> 
+            <option>Italiano</option>
+            <option>Deutsch</option>
+            <option>Español</option>
+            <option>Français</option>
+            <option>Português</option>
+            <option>Slovenčina</option>
+            <option>Magyar</option>
+            <option>Slovenščina</option>
+            <option>Lietuvių kalba </option>
+            <option>Svenska</option>
+        </select></div>
+        <div><select style="border: 0px;"><option>Ship to/INR</option></select></div>
+        <div><select style="border: 0ch;"><option>Supprt Center</option></select></div>
+
+        </div>
+        <div id="head2">
+            <div id="head2one">   <div id="head2oneone"><h1>greekbuying</h1></div>
+            <div id="head2onetwo"> 
+                <select style="border:0px;">
+                    <option value="">All Categories</option>
+                    <option value="">mart Home & Garden</option>
+                    <option value="">Phones & Accessories</option>
+                    <option value="">Computers, Tablets & Accessories</option>
+                    <option value="">Wearable Devices</option>
+                    <option value="">Automobiles & Motorcycles</option>
+                    <option value="">sports & Outdoors</option>
+                    <option value="">Consumer Electronics</option>
+                    <option value="">TV Boxes & Mini PCs</option>
+                    <option value="">Toys & Hobbies</option>
+                    <option value="">Security System</option>
+                    <option value="">Fashion</option>
+                </select>
+                <input style="border: 0ch;" placeholder="search by keywords" >
+                <div style="background-color: blue; width: 90px;height: 15px;padding: 8px;"><i class="fas fa-search"></i></div>
+            </div>
+            <div id="head2onethree">
+                <div id="sign_in"><i class="far fa-user" style="color: blue;"></i>Sign in</div>
+                <div id="wishlist"><i class="far fa-heart" style="color: blue;height: 200px;"></i>Wislist</div>
+                <div id="cart"><i class="fas fa-cart-plus" style="color: blue;"></i>Cart</div> </div>
+            </div>
+            <div id="head2two"> 
+            <div id="head2twoone"><select style="border: 0px;"> 
+                 <option value="">Shop all Categories</option>
+                 <option value="">Local Wearhouse</option>
+                 <option value="">Smart home and Garden</option>
+                 <option value="">sports and Outdoors</option>
+                 <option value="">Customer Electronics</option>
+                 <option value="">Tv Boxes and mini piece</option>
+                 <option value="">Computers Tablest and Accessories</option>
+                 <option value="">Toys and Hobbies</option>
+                 <option value="">Phones and Accessories</option>
+                 <option value="">Automobiles and Motorcycles</option>
+                 <option value="">Wearable Devices</option>
+                 <option value="">Security System</option>
+                 <option value="">Fashion</option>
+            </select></div>
+            <div>New</div>
+            <div>Top seller</div>
+            <div>Live</div> 
+            <div>Brand</div>
+            <div>Clearence</div>
+            <div>Deal</div>
+            <div>Coupon</div>
+            <div id="student_image" style="margin-top: -1px;"><img src="https://img.gkbcdn.com/s3/c/2106/20210623141003631student.png"></div>
+        </div>
+    </div>
+    <div id="container">
+        <!-- <div class="nav"></div> -->
+        <div class="top">
+            <img src="https://img.gkbcdn.com/s3/bn/2112/1500x125-61b9a47a2b40c914d0d322b4.jpg" alt="">
+        </div>
+        <div class="bottom">
+            <div class="card1">
+                <h3>Phones & Accessories</h3>
+                <p>Cell Phones</p>
+                <p>Phone Accessories</p>
+                <p>Apple Accessories</p>
+                <p>Samsung Accessories</p>
+            </div>
+            <div class="card2">
+                <div class="box1">
+                    <img src="https://img.gkbcdn.com/s3/c/2112/476735-61b1b36c2b40c911805425d6.jpg" alt="">
+                </div>
+                <div class="box2">
+                    <div class="brand">
+                        <div><p style="margin: 5px 0 0 10px ;">Brands</p></div>
+                        <div><img src="https://img.gkbcdn.com/s3/b/xiaomi.jpg" alt=""></div>
+                        <div><img src="https://img.gkbcdn.com/s3/b/Logo/oneplus.jpg" alt=""></div>
+                        <div><img src="https://img.gkbcdn.com/s3/b/Logo/huawei.jpg" alt=""></div>
+                        <div><img src="https://img.gkbcdn.com/s3/b/Logo/chuwi.jpg" alt=""></div>
+                        <div><img src="https://img.gkbcdn.com/s3/b/Logo/makibes.jpg" alt=""></div>
+                        <div><img src="https://img.gkbcdn.com/s3/b/Logo/pofan.jpg" alt=""></div>
+                    </div>
+                    <div class="filter">
+                        <div><p style="margin-top: 5px; font-size: 20px;">Filter :</p></div>
+                        <div> <select  id="brandshort" onchange="handlebrand()" style="width: 100%; height: 100%;">
+                            <option value="">Filter by Brand</option>
+                            <option value="Xiaomi">Xiaomi</option>
+                            <option value="Realme">Realme</option>
+                            <option value="POCO">POCO</option>
+                            <option value="OnePlus">OnePlus</option>
+                            
+                          </select>
+                        </div>
+                    </div>
+                    <div class="sortby">
+                        <div><p style="margin-top: 5px; font-size: 20px;">Sort :</p></div>
+                        <div><select  id="priceshort" onchange="handlepriceshort()"   style="width: 100%; height: 100%;">
+                            <option value="">Sort by Price</option>
+                            <option value="high">High to Low</option>
+                            <option value="low">Low to High</option>
+                          </select></div>
+                    </div>
+                </div>
+                <div class="box3"> 
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <!-- footer section  -->
+        <div class="footer-main">
+            <div class="footer-div">
+                <div class="footer-inner">
+                    <div class="footer-left">
+                        <div class="footer-input">
+                            <input type="text" placeholder="Enter email to get 5% off coupon">
+                            <button>Subscribe</button>
+                        </div>
+                        <div class="footer-left-bottom">
+                            <h4>About Geekbuying</h4>
+                            <p>We at Geekbuying are all about making our customer's lives comfortable and smarter. 
+                                We have a massive selection of products and offer unbeatable prices. 
+                                If you are looking for the latest and the greatest product in categories 
+                                like smart home and outdoor gadgets,Geekbuying is where you should be.
+                                <br>
+                               Geekbuying is the ultimate shopping hub for new releases covering smart 
+                               home products like vacuum cleaners, fitness equipment like treadmills, 
+                               top of the line home and office furniture, outdoor items including e-bikes, 
+                               scooters, and other consumer goods like TV boxes, RC Toys and so much more! 
+                               Shop for your favorite brands and products today!</p>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                       <div class="footer-right-top">
+                           <div class="footer-right-top-left">
+                            <div >
+                                <img src="https://img.icons8.com/material-sharp/24/000000/facebook-f.png"/>
+                            </div>
+                            <div>
+                                <img src="https://img.icons8.com/material-rounded/24/000000/youtube-play.png"/>
+                            </div>
+                            <div>
+                                <img src="https://freepngimg.com/save/62837-instagram-icons-photography-computer-logo-icon/512x512"/>
+                            </div>
+                            <div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeB2AoeJlkzKOVRWqC6SMiZB34yKHcRFufoyM7zbz3i0cEAYe0hOtex9I9PYS6w-aBliM&usqp=CAU"/>
+                            </div>
+                            <div>
+                                <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-twitter-1.png">
+                            </div>
+                           </div>
+                           <div class="footer-right-top-right">
+                            <div >
+                                <img src="https://cdn3.iconfinder.com/data/icons/devices-57/100/Smartphone-512.png"/>
+                                <p>Mobile</p>
+                                
+                            </div>
+                            <div>
+                                <img src="https://www.svgrepo.com/show/145061/android-logo.svg"/>
+                                <p>Anroid</p>
+                            </div>
+                            <div>
+                                <img src="data:image/png;base64,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"/>
+                                <p>IOS</p>
+                            </div>
+                           </div>
+                       </div> 
+                       <div class="footer-right-bottom">
+                        <div class="footer-right-bottom-left">
+                            <h4>Help</h4>
+                           <p>Order status</p>
+                           <p>About us</p>
+                           <p>Contact us</p>
+                           <p>Warranty</p>
+                           <p>FAQs</p>
+                           <p>Sitemap</p>
+        
+                        </div>
+                        <div class="footer-right-bottom-center">
+                            <h4>Support</h4>
+                            <p>Payment information</p>
+                            <p>Shipping guide</p>
+                            <p>Wholesale</p>
+                            <p>Affilliates</p>
+                            <p>Student discount</p>
+                            <p>Youth discount</p>
+                            <p>Request a sample</p>
+    
+                        </div>
+                        <div class="footer-right-bottom-right">
+                            <h4>Policies</h4>
+                           <p>Terms & conditions</p>
+                           <p>Returns policy</p>
+                           <p>Privacy</p>
+                           <p>Declration</p>
+                           <p>Customs</p>
+    
+                        </div>
+                       </div> 
+                        
+                        
+                    </div>
+             </div>
+             <div>
+                 <h4>Popular search</h4>
+                 <div class="footer-popular">
+                   
+                     <div>Geekbuying Coupon</div>
+                     <div> Roborock Q7 Max</div>
+                     <div>Tronsmart Bluetooth Speakers</div>
+                     <div>Windows Mini PC</div>
+                     <div>Android tv boxes</div>
+                     <div>LDS Robot Vaccum</div>
+                     <div>Electric Bike</div>
+                     <div>Oneplus 10 pro</div>
+                     
+               </div>
+             </div>
+             <div class="footer-lang">
+                 <p>English | Español | Français | Deutsch | Italiano | Português | Nederlands | Polski | Русский | Türkçe | ελληνικά | Magyar | لعربية| עברית | ไทย | 日本語</p>
+             </div>
+             <div class="footer-payment">
+                 <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/footicons.jpg" alt="">
+                 <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/geek_reviews.jpg?v=20220111" alt="" width="150px">
+             </div>
+             <div class="footer-copyright">
+            <p>Copyright © 2012-2022 GeekBuying.com. All rights reserved.</p>
+             </div>
+            </div>
+    
+        </div>
+</body>
+</html>
+
+<script>
+        //    click function for login, wishlist, cart
+   document.querySelector("#sign_in").addEventListener("click" , function(){
+        window.location.href="login.html";
+    })
+    document.querySelector("#wishlist").addEventListener("click" , function(){
+        window.location.href="wishpage.html";
+    })
+    document.querySelector("#cart").addEventListener("click" , function(){
+        window.location.href="cart.html";
+    })
+    //   click function end
+
+    Phonesdata = [
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-11-12/xiaomi-redmi-note-11-5g-smartphone-8gb-256gb-black-1636705048083._w280_p1_.jpg" ,
+         name: "Xiaomi Redmi Note 11 CN Version 5G Smartphone" ,
+         price: 33763.72,
+         strikedoffprice : 39260.26,
+         brand: "Xiaomi",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-12-30/xiaomi-mi-12-6-28--5g-smartphone-snapdragon-8-8gb-128gb-black-6a24bb-1640827752278._w280_p1_.jpg" ,
+         name: "Xiaomi Mi 12 CN Version 5G Smartphone 6.28 inch" ,
+         price: 65565.17,
+         strikedoffprice : 72396.59,
+         brand: "Xiaomi",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2020-08-03/Xiaomi-Redmi-9A-6-53--MTK-Helio-G25-Smartphone-4GB-64GB-Blue-425886-0._w280_p1_.jpg" ,
+         name: "Xiaomi Redmi 9A CN Version 4G LTE SmartPhone" ,
+         price: 10913.79,
+         strikedoffprice :12562.75,
+         brand: "Xiaomi",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2020-08-03/Xiaomi-Redmi-9A-6-53--MTK-Helio-G25-Smartphone-4GB-64GB-Green-425885-0._w280_p1_.jpg" ,
+         name: "Xiaomi Redmi 9A cN Version 4G LTE SmartPhone" ,
+         price: 11463.44,
+         strikedoffprice : 12562.75,
+         brand: "Xiaomi",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2022-01-05/Realme-GT2-Pro-6-7-Inches-Snapdragon-8-8GB-256GB-Green-492530-0._w280_p1_.jpg" ,
+         name: "Realme GT2 Pro CN Version 5G Smrtphone" ,
+         price: 70276.49,
+         strikedoffprice : 74987.82,
+         brand: "Realme",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2019-04-03/estrella-class10-micro-sd-memory-card-tf-for-phones-tablet-32g-1571984039891._w280_p1_.jpg" ,
+         name: "ESTRELLA Class 10 SDHC 32GB Micro SD Card" ,
+         price: 627.39,
+         strikedoffprice : 60,
+         brand: "ESTRELLA",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2022-01-05/Realme-GT2-Pro-6-7-Inches-Snapdragon-8-8GB-256GB-White-492529-0._w280_p1_.jpg" ,
+         name: "Realme GT20 Pro CN Version 5G Smartphone" ,
+         price: 70276.49,
+         strikedoffprice : 74987.82,
+         brand: "Realme",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-11-26/Wireless-car-charger--Qi-car-charger--15-W---10-W---7-5-W--auto-clamp-479546-1._w280_p1_.jpg" ,
+         name: "Mpow Wireless QI Car Charger 15W/10W Clamp" ,
+         price: 1883.75,
+         strikedoffprice : 2747.49,
+         brand: "Mpow",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2012-06-11/composite-av-cable-for-iphone-4-4s-3g-3gs-white-1571982393974._w280_p1_.jpg" ,
+         name: "Brand New Composite Cable for iphone" ,
+         price: 784.44,
+         strikedoffprice : 78,
+         brand: "Mpow",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-11-17/Global-Version-POCO-M3-Pro-478594-0._w280_p1_.jpg" ,
+         name: "POCO M3 Pro GLobal Version 5G Smartphone" ,
+         price: 17274.08,
+         strikedoffprice : 21121.66,
+         brand: "POCO",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2014-04-14/qi-standard-wireless-charging-receiver-pad-for-samsung-galaxy-s5-i9600---blue-1571981666408._w280_p1_.jpg" ,
+         name: "Qi Standard Wireless Reciver Pad for Samsung" ,
+         price: 572.43,
+         strikedoffprice :  57,
+         brand: "Qi",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-03-24/GaN-P60-GaN-65W-USB-C-Charger-457225-1._w280_p1_.jpg" ,
+         name: "Gan-P60 GaN 65W USB c Charger" ,
+         price: 2040.79,
+         strikedoffprice : 3140.10,
+         brand: "POCO",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2020-08-03/Xiaomi-Redmi-9A-6-53--MTK-Helio-G25-Smartphone-4GB-64GB-Black-425888-0._w280_p1_.jpg" ,
+         name: "Xiaomi Redmi 9A CN Version 4G LTE SmartPhone" ,
+         price: 10913.79,
+         strikedoffprice : 12562.75,
+         brand: "Xiaomi",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2017-05-12/red-pofan-po7-usb-to-lightning-data-cable-1572249005688._w280_p1_.jpg" ,
+         name: "Red Pofan Po7 USB to 8 Pin Data Cable" ,
+         price: 548.87,
+         strikedoffprice : 12.75,
+         brand: "POCO",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-11-26/Wireless-Charger--3-in-1-Wireless-Charging-Station-for-All-iWatch-479548-0._w280_p1_.jpg" ,
+         name: "Senso 3-in-1 Magnetic Wireless Charger" ,
+         price: 1726.70,
+         strikedoffprice : 2747.49,
+         brand: "POCO",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-11-17/OnePlus-7T-478580-0._w280_p1_.jpg" ,
+         name: "OnePlus 7T Global Version 4G LTE Smartphone" ,
+         price: 32193.28,
+         strikedoffprice : 39181.74,
+         brand: "OnePlus",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2018-11-02/original-adidas-tpu-case-iphone-7-street-corner-art-1571986798031._w280_p1_.jpg" ,
+         name: "Original adidas YPU case iphone 7" ,
+         price: 1098.52,
+         strikedoffprice : 109,
+         brand: "iphone",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2020-04-17/Global-ROM-OnePlus-8-6-55-Inch-5G-Smartphone-12GB-256GB-Onyx-Black-901961-._w280_p1_.jpg" ,
+         name: "OnePlus 7T Global Version 4G LTE Smartphone" ,
+         price: 75223.39,
+         strikedoffprice : 5223.39,
+         brand: "OnePlus",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2019-05-10/protective-film-for-oneplus-7-transparent-1571983526857._w280_p1_.jpg" ,
+         name: " Tempered Glass Protective Film for OnePLus 7" ,
+         price: 313.30,
+         brand: "OnePlus",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2020-04-17/Global-ROM-OnePlus-8-6-55-Inch-5G-Smartphone-12GB-256GB-Glacial-Green-901946-._w280_p1_.jpg" ,
+         name: "OnePlus6. 8.6.55 Inch Screen 5G Smartphone" ,
+         price: 75223.39,
+         strikedoffprice : 5223.39,
+         brand: "OnePlus",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-09-18/xiaomi-redmi-k40-gaming-edition-global-rom-6-67--8gb-256gb-black--1631946889460._w280_p1_.jpg" ,
+         name: "Xiaomi Redmi K40 Gaming Edition Global" ,
+         price: 39024.70,
+         strikedoffprice : 54964.68,
+         brand: "Xiaomi",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-11-12/xiaomi-redmi-note-11-5g-smartphone-6gb-128gb-white-1636706884522._w280_p1_.jpg" ,
+         name: "Xiaomi Redmi Note 1 CN Version 5G Smartphone" ,
+         price: 27481.95,
+         strikedoffprice : 32978.50,
+         brand: "Xiaomi",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-12-20/oppo-r11s-6-01-inch-4gb-64gb-smartphone-red-721452-1640003614062._w280_p1_.jpg" ,
+         name: "OPPO Find N Foldable Flagship Smartphone" ,
+         price: 141338.99,
+         strikedoffprice : 41338.99,
+         brand: "OPPO",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2022-01-05/Realme-GT2-Pro-6-7-Inches-Snapdragon-8-12GB-512GB-White-492531-0._w280_p1_.jpg" ,
+         name: "Realme GT2 Pro CN Version 5G Smartphone" ,
+         price: 84410.47,
+         strikedoffprice : 90692.24,
+         brand: "Realme",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2022-01-06/realme-gt-neo-2-cn-version-5g-6-62-inch-8gb-256gb-black-04be87-1641458077419._w280_p1_.jpg" ,
+         name: "Realme GT Neo 2 CN Version 5G Smartphone" ,
+         price: 41615.93,
+         strikedoffprice : 44756.81,
+         brand: "Realme",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-05-05/xiaomi-redmi-k40-gaming-edition-cn-version-6-67--12gb-256gb-black-1620200155689._w280_p1_.jpg" ,
+         name: "Xiaomi Redmi K40 Gaming Edition" ,
+         price: 44756.81,
+         strikedoffprice : 54964.68,
+         brand: "Xiaomi",
+    },
+    {
+         image_url: "https://img.gkbcdn.com/p/2021-05-26/xiaomi-mi-10-lite-6-57-inch-5g-smartphone-6gb-128gb-white-1622024146529._w280_p1_.jpg" ,
+         name: "Redmi Note 10 Pro CN Version 6.6 Inch" ,
+         price: 32193.28,
+         strikedoffprice : 39260.26,
+         brand: "Xiaomi",
+    },
+ ]
+
+
+     var cartarr = JSON.parse(localStorage.getItem("cartitems"))||[]
+     displaydata(Phonesdata);
+
+     var  wishlistarr = JSON.parse(localStorage.getItem("wishlistarr"))||[]
+     displaydata(Phonesdata);   
+
+    function handlebrand(){
+       var selected_brand = document.querySelector("#brandshort").value;
+       console.log(selected_brand);
+
+       var filterlist = Phonesdata.filter(function(elem){
+         return elem.brand == selected_brand;
+       })
+       console.log(filterlist);
+       displaydata(filterlist);
+     }
+
+    function handlepriceshort(){
+    var selected = document.querySelector("#priceshort").value;
+    console.log(selected);
+
+    if(selected == "high"){
+        Phonesdata.sort(function(a,b){
+         return Number(b.price)-Number(a.price);
+       });
+    }
+    if(selected == "low"){
+        Phonesdata.sort(function(a,b){
+         return Number(a.price)-Number(b.price);
+       });
+    }
+    console.log(Phonesdata);
+    displaydata(Phonesdata);
+  }
+     
+
+     function displaydata(Phonesdata){
+    document.querySelector(".box3").innerHTML ="";
+    Phonesdata.map(function (data) {
+    var div = document.createElement("div");
+    div.setAttribute("id", "divhover");
+    //img,name,price,strikedoffprice
+
+    // image creation
+    var image = document.createElement("img");
+    image.setAttribute("src", data.image_url);
+
+    // name creation
+
+    var name = document.createElement("p");
+    name.textContent = data.name;
+
+    // price creation
+
+    var div2 = document.createElement("div");
+    div2.setAttribute("id", "flex");
+
+    var h1 = document.createElement("h2");
+    h1.textContent = "₹";
+
+    var h2 = document.createElement("h2");
+    h2.textContent = data.price;
+
+    
+    div2.append(h1, h2);
+    
+    var div3 = document.createElement("div");
+    div3.setAttribute("id", "flex2");
+
+    var p1 = document.createElement("p");
+    p1.textContent = "₹";
+
+
+    var p2 = document.createElement("p");
+    p2.textContent = data.strikedoffprice;
+    p2.style.textDecoration = "line-through";
+
+    div3.append(p1,p2);
+
+    var btn = document.createElement("button");
+    btn.setAttribute("id", "cartbtn");
+    btn.textContent = "Add To Cart";
+    btn.addEventListener("click",function(){
+    addtocart(data);
+ });
+
+    var btn2 = document.createElement("button");
+    btn2.setAttribute("id", "wishlistbtn");
+    btn2.innerHTML = '<i  class="far fa-heart"></i>';
+  
+    btn2.addEventListener("click",function(){
+    addtowishlist(data);
+ });
+
+    //append
+    div.append(image, name,div2,div3,btn,btn2);
+    document.querySelector(".box3").append(div);
+  });
+}
+
+  function addtocart(data){
+  console.log(data);
+  cartarr.push(data);
+  localStorage.setItem("cartitems",JSON.stringify(cartarr));
+  alert("added to cart successfully")
+}
+
+  function  addtowishlist(data){
+    console.log(data);
+    wishlistarr.push(data);
+    localStorage.setItem("wishlistitems",JSON.stringify( wishlistarr));
+    alert("added to Wishlist successfully")
+
+  }
+
+</script>

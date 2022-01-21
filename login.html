@@ -53,8 +53,8 @@
         <input id="pass" type="password" placeholder="Password">
         <label for=""><input class="check" type="checkbox" >keep me signed in ? </label>
         <input id="submit" type="submit" value="sign in">
-        <button>Crate a new account</button>
      </form>
+     <button onclick=" window.location.href='signup.html'">Crate a new account</button>
     </div>
 </body>
 </html> 
@@ -71,5 +71,14 @@
         var pass = document.getElementById("pass").value;
 
         console.log(email,pass);
+       var data= JSON.parse(localStorage.getItem("signupdata"));
+         for(var i=0; i<data.length; i++){
+             if(data[i].Email_id == email && data[i].pass_word == pass){
+                 alert("login successfull");
+                 window.location.href="homelanding.html";
+             }else{
+                 alert("Wrong password");
+             }
+         }
     }
 </script>
