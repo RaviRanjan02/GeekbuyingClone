@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping cart</title>
     <style>
-       
+       /* div{
+           border: 1px solid red;
+       } */
     .Shopping-geeklogo>img{
        width: 200px;
       
@@ -117,13 +119,92 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
+.cart-item-product-whislist>button{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    text-decoration: underline;
+
+}
+.cart-item-product-whislist>button:hover{
+    color: blue;
+    font-size: 15px;
+}
+.cart-item-product-total{
+    font-weight: bold;
+}
+#cart-subtotal-your{
+    font-weight: bold;
+}
+#cart-subtotal-your>span{
+    color: orangered;
+    font-weight: bold;
+    font-size: x-large;
+}
+#Shopping-bottom-total{
+    font-weight: bold;
+}
+#Shopping-bottom-total>span{
+    color: orangered;
+    font-weight: bold;
+    font-size: x-large;
+}
+#Shopping-bottom-you-choose{
+    color: grey;
+}
+#Shopping-bottom-you-choose>span{
+    color: black;
+    font-weight: bold;
+}
+#cart-subtotal-button>button{
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    color: grey;
+}
+#cart-subtotal-button>button:hover{
+    color: blue;
+    font-size: large;
+    
+}
+.cart-qty-plus{
+    background-color: transparent;
+    border: 1px solid grey ;
+}
+.cart-qty-minus{
+    background-color: transparent;
+    border: 1px solid grey ;
+}
+#Shopping-bottom-continue>button:hover{
+   color:blue;
+   font-size: large;
+   
+   
+}
+#Shopping-bottom-continue>button{
+    background-color: transparent;
+    border: 1px;
+    color: grey;
+}
+.itemsadd{
+    border: 1px solid grey;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+.itemsadd>p{
+    padding-left: 20px;
+}
+.cart-subtotal{
+    border-top: 1px solid grey;
+    padding: 10px;
+}
 
     </style>
 </head>
 <body>
   <div class="Shopping-top">
    <div class="Shopping-geeklogo"><img src="https://www.shareasale.com/images/logo2016_1.jpg" alt=""></div>
-   <div class="cartprocess"><img src="./images/cartprocess.png" alt=""></div>
+   <!-- <div class="cartprocess"><img src="./images/cartprocess.png" alt=""></div> -->
   </div>  
   <div class="Shopping-middle">
   <div><h3>Product Name & Detail</h3></div>
@@ -139,7 +220,11 @@
  </div>
   </div>
   <div class="itemsadd">
+<<<<<<< HEAD
     <p>Ship From:China ( <span class="cart-itemscount">Count</span> Items)</p>  
+=======
+    <p>Ship From:China ( <span class="cart-itemscount">2</span> Items)</p>  
+>>>>>>> d69d7362ccda839684d6de4ea6813b0095821974
     <div class="cart-item-box">
        <!-- <div class="cart-items"> -->
             <!-- <div class="cart-items-checkbox"><input type="checkbox"></div>
@@ -170,17 +255,27 @@
         </div> -->
     </div>
     <div class="cart-subtotal">
-        <div id="cart-subtotal-button"><button>Select All</button></div>
+        <div id="cart-subtotal-button"><button> <span><input type="checkbox"></span>  Select All</button></div>
         <div id="cart-subtotal-button"><button>Add to Wishlist</button></div>
         <div id="cart-subtotal-button"><button>Delete</button></div>
+<<<<<<< HEAD
         <div id="subTOTAL">subtotal</div>
+=======
+        <div id="cart-subtotal-your">Your Subtotal: <span>₹ 8086.21</span></div>
+>>>>>>> d69d7362ccda839684d6de4ea6813b0095821974
     </div>
   </div>
   </div>  
   <div class="Shopping-bottom" >
+<<<<<<< HEAD
    <div>Continue Shopping</div>
    <div id="Nub">SButton</div>
    <div id="TOTAL">total</div>
+=======
+   <div id="Shopping-bottom-continue"> <button>Continue Shopping <span>></span></button></div>
+   <div id="Shopping-bottom-you-choose">You choose <span>2</span> item(s)</div>
+   <div id="Shopping-bottom-total">Total : <span>₹ 8086.21</span></div>
+>>>>>>> d69d7362ccda839684d6de4ea6813b0095821974
    <div><img src="https://content1.geekbuying.com/V1.4/en/images/cartImg/new_pp.png" alt=""></div>
    <div class="checkout"><button >Proceed to Checkout</button></div>
   </div>  
