@@ -101,12 +101,13 @@
             <div class="top">
                 <div class="top_son1">
                     <b>Create your account</b> 
-                    <button class="signin">Sign In</button>
+                    <button class="signin" onclick=" window.location.href='login.html'">Sign In</button>
                 </div>
                 <div class="top_son2">
-                    <input type="text" placeholder="Nick name" value="" />
-                    <input type="text" placeholder="Email address" value="" />
-                    <input type="password" placeholder="Password" value="" />
+                     <form id="form">
+                    <input id="nickname" type="text" placeholder="Nick name" />
+                    <input id="email" type="text" placeholder="Email address" />
+                    <input id="pass" type="password" placeholder="Password" />
                     <div class="section1">
                         <input class="code" type="text" placeholder="Access code" value=""/>
                         <img class="take_code" src="https://www.geekbuying.com/QA/QACode?1642600022166" />
@@ -118,10 +119,34 @@
                         <span>&</span>
                         <a href="">Privacy Policy</a>
                     </div>
-                    <button class="createacc">Create account</button>
+                    <input type="submit" class="createacc" value="Create account">
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </body>
+ <script>
+           var signuparr =JSON.parse(localStorage.getItem("signupdata"))||[];
+
+          document.querySelector("#form").addEventListener("submit",submitform);
+            function submitform(event){
+               event.preventDefault();
+               var nick = document.querySelector("#nickname").value;
+                var Email = document.querySelector("#email").value;
+                var password = document.querySelector("#pass").value;
+                var obj = {
+                    Nick_name: nick,
+                    Email_id: Email,
+                    pass_word: password
+                };
+                 
+                  signuparr.push(obj);
+                  localStorage.setItem("signupdata",JSON.stringify( signuparr));
+                 alert("signup successfull"); 
+                 window.location.href="login.html";
+                
+            }
+            
+ </script>
 </html>
