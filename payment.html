@@ -160,14 +160,14 @@
         </div>
         <div class="payment-gateway-grand-total">
             <div>Grand Total:</div>
-            <div>₹8775.63</div>
+            <div id="total"></div>
         </div>
         <hr>
         <div class="payment-gateway-payable-amount">
             <div>Payable Amount:</div>
-            <div>₹8775.63</div>
+            <div id="total2"></div>
         </div>
-        <div class="payemnt-gateway-pay"><button>Pay</button></div>
+        <div class="payemnt-gateway-pay"><button onclick="window.location.href=''">Pay</button></div>
     </div>
 </div>
 </div>
@@ -181,4 +181,15 @@
     </div>
 </div>
 </body>
+     <script>
+          var  cartarr = JSON.parse(localStorage.getItem("cartitems"));
+             var X = cartarr.reduce(function(acc, cv){
+                  return acc + +cv.price;
+             },0);
+             var AfterDiscount = (X*70)/100;
+             var total = document.querySelector("#total");
+                total.textContent=`${AfterDiscount}`;
+                var total = document.querySelector("#total2");
+                total.textContent=`${Math.floor(AfterDiscount)}`;
+     </script>
 </html>
