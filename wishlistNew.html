@@ -34,9 +34,10 @@
                width: 20%;
                display: flex;
                flex-direction: column;
-               padding: 8px;
+               /* padding: 8px; */
                /* border: 1px solid red; */
                border-right: 1px solid grey;
+               text-align: left;
       }
       .whishlist-account{
           text-align: center;
@@ -44,6 +45,7 @@
       li{
           list-style: none;
           margin: 5px;
+          margin-left: -10px !important;
       }
       li:hover{
              color: skyblue;
@@ -65,8 +67,8 @@
           justify-content: space-between;
       }
       .whishlistproduct{
-            width: 250px;
-            height: 350px;
+            width: 180px;
+            height: 250px;
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -79,7 +81,7 @@
           widows: 90%;
       }
       .whishlistproduct-img>img{
-          width:100%
+          width:60%
       }
       .whishlistcart-btn{
           border: none;
@@ -88,10 +90,18 @@
           outline: none;
           font-size: 16px;
           padding: 5px 30px;
+          margin-top: 20px;
+      }
+      .whishlistcart-btn:hover{
+          font-size: 18px;
+          padding: 7px 35px;
       }
       .whishlist-product-details{
         font-family:"Open Sans", sans-serif ;
+        color: grey;
+        font-size: 13px;
       }
+      
 
       /* footer css */
       .footer-main{
@@ -300,7 +310,24 @@ line-height: 30px;
                                 <button class="whishlistcart-btn">Add to Cart</button>
                             </div>
                       </div>
-                      
+                      <div class="whishlistproduct">
+                        <div class="whishlistproduct-img">
+                            <img src="https://img.gkbcdn.com/p/2022-01-12/8e568bb4219e486bbaa9eb8956c1be98-493435-0._w280_.jpg" alt="">
+                        </div>
+                        <div class="whishlist-product-details">P1 Webcam 1080P with Microphone Auto Focus Light Correction For Windows PC Mac Laptop Desktop - Black</div>
+                        <div>
+                            <button class="whishlistcart-btn">Add to Cart</button>
+                        </div>
+                     </div>
+                     <div class="whishlistproduct">
+                        <div class="whishlistproduct-img">
+                            <img src="https://img.gkbcdn.com/p/2022-01-12/8e568bb4219e486bbaa9eb8956c1be98-493435-0._w280_.jpg" alt="">
+                        </div>
+                        <div class="whishlist-product-details">P1 Webcam 1080P with Microphone Auto Focus Light Correction For Windows PC Mac Laptop Desktop - Black</div>
+                        <div>
+                            <button class="whishlistcart-btn">Add to Cart</button>
+                        </div>
+                  </div>
                </div>
          </div>
     </div>
