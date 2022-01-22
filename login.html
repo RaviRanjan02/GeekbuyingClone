@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign in page</title>
+    <title>login</title>
     <style>
         body{
         background-image:url(//img.gkbcdn.com/s3/bn/2111/1920x680-619327822b40c9253c42c6a0.jpg)
@@ -72,13 +72,18 @@
 
         console.log(email,pass);
        var data= JSON.parse(localStorage.getItem("signupdata"));
+             var CCC= false;
          for(var i=0; i<data.length; i++){
              if(data[i].Email_id == email && data[i].pass_word == pass){
+                 CCC= true;
+                 break;
+             }
+         }
+         if(CCC){
                  alert("login successfull");
                  window.location.href="homelanding.html";
              }else{
                  alert("Wrong password");
              }
-         }
     }
 </script>
