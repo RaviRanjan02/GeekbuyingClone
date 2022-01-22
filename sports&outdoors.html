@@ -223,6 +223,8 @@
       }
        #divhover:hover{
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 20px;
+      
       }
       #wishlistbtn{
           border: 0px;
@@ -999,7 +1001,7 @@ line-height: 30px;
 
  var btn2 = document.createElement("button");
     btn2.setAttribute("id", "wishlistbtn");
-    btn2.innerHTML = '<i  class="far fa-heart"></i>';
+    btn2.innerHTML = '<i  style="font-size:25px;color:grey"  class="far fa-heart"></i>';
   
     btn2.addEventListener("click",function(){
     addtowishlist(data);
