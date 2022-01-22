@@ -9,12 +9,16 @@
         #top_logo {
             width: 100%;
             border-bottom: 1px solid black;
-            
+            display: flex;
+            justify-content: space-between;
         }
         .logo {
             width: 15%;
             height: 10%;
             padding-left: 8%;
+        }
+        .payprocess {
+            padding-right: 8%;
         }
         #bottom {
             width: 85%;
@@ -131,6 +135,9 @@
         #checkline {
             margin-left: 115px;
         }
+
+
+        
         
     </style>
 </head>
@@ -207,19 +214,58 @@
     <div id="Last_section">
         <div class="coupon_box">
             <p>Coupon:</p>
-            <input class="entercode" type="text" placeholder="Please enter your code here">
-            <span><button class="apply">Apply</button></span>
+             <form id="formsubmit">
+            <input id="coupan" class="entercode" type="text" placeholder="Please enter your code here">
+            <span><input type="submit" class="apply" value="Apply"></span>
+            </form>
         </div>
         <div class="payment_box">
             <div>
-                <p>Order Subtotal:</p>
-                <p>Shipping Cost:</p>
-                <p>Grand Total:</p>
-                <button class="place_order">Place Your Order</button>
+                <p id="total"></p>
+                <p>Shipping Cost: 0:00</p>
+                <p id="dis">Coupan Amount: -0:00</p>
+                <p id="final" style="font-weight: bold; color: brown;"></p>
+                <button onclick="window.location.href='payment.html'" class="place_order">Place Your Order</button>
             </div>
             
         </div>
     </div>
 
 </body>
+ <script>  
+             var  cartarr = JSON.parse(localStorage.getItem("cartitems"));
+             var X = cartarr.reduce(function(acc, cv){
+                  return acc + +cv.price;
+             },0);
+             var total = document.querySelector("#total");
+                total.textContent=`Order Subtotal: ${X}`;
+
+                var final = document.querySelector("#final");
+                final.textContent=`Grand Total: ${X}`;
+
+        document.querySelector("#formsubmit").addEventListener("submit",coupanfun);
+         function coupanfun(event){
+            event.preventDefault();
+             
+            var  cartarr = JSON.parse(localStorage.getItem("cartitems"));
+             var X = cartarr.reduce(function(acc, cv){
+                  return acc + +cv.price;
+             },0);
+               console.log(X);
+            var Cvalue = document.querySelector("#coupan").value;
+            if(Cvalue == "masai30"){
+               var AfterDiscount = (X*70)/100;
+                var Dvalue = (X*30)/100;
+                alert("coupan applyed");
+            }else{
+                alert("Invalid coupan");
+            }
+
+               var Discount = document.querySelector("#dis");
+               Discount.textContent=`Coupan Amount: -${Dvalue}`;
+
+                var final = document.querySelector("#final");
+                final.textContent=`Grand Total: ${AfterDiscount}`;
+         }
+ </script>
 </html>
