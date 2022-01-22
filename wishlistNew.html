@@ -677,7 +677,7 @@ line-height: 30px;
     document.querySelector("#cart").addEventListener("click" , function(){
         window.location.href="cart.html";
     })
-        
+         var cartarr = JSON.parse(localStorage.getItem("cartitems"))||[]
          var wishlistarr = JSON.parse(localStorage.getItem("wishlistitems"))||[];
          console.log(wishlistarr);
             displaywishlist(wishlistarr);
@@ -703,11 +703,21 @@ line-height: 30px;
                         Btn.setAttribute("class","whishlistcart-btn");
                         Btn.textContent="Add to Cart";
                         Div3.append(Btn);
+                        Btn.addEventListener("click",function(){
+                            addtocart(a);
+                               });
 
                         DIV.append(Div1,Div2,Div3);
                         document.querySelector(".whishlist-product").append(DIV);
                   });
            }
+
+           function addtocart(a){
+//   console.log(a);
+  cartarr.push(a);
+  localStorage.setItem("cartitems",JSON.stringify(cartarr));
+  alert("added to cart successfully")
+}
 
   </script>
 </html>
