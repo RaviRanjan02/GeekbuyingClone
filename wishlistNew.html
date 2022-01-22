@@ -5,7 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whishlist</title>
-    <style>
+    <script src="https://kit.fontawesome.com/08db62848f.js" crossorigin="anonymous"></script>
+    <style> 
+           #header{
+            width: 100%;
+            height: 130px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+        #head1{
+            height: 30px;
+            display: flex;
+           margin-left: 695px;
+        }
+        #head1 > div{
+            margin: 5px 20px 0px 0px;
+        }
+        #head2{
+            border-top: 1px solid rgb(242,242,242);
+            height: 100px;
+        }
+        #head2one{
+            width: 100%;
+            height: 50%;
+            display: flex;
+        }
+        #head2onethree{
+            display: flex;
+        }
+        #head2oneone{
+            width: 29%;
+            text-align: right;
+            margin-top: -20px;
+            padding-right: 20px;
+            color: royalblue;
+        }
+        #head2onetwo{
+            display: flex;
+            width: 40%;
+            border: 1px solid blue;
+            margin: 8px 0px;
+        }
+        #head2onethree{
+            padding: 10px;
+            width: 20%;
+            justify-content: space-around;
+            margin-top: 10px;
+            margin-right: 120px;
+            margin-left: 100px;
+        }
+        #head2two{
+         width: 100%;
+         height: 49%;
+         display: flex;
+        }
+        #head2twoone{
+            width: 22%;
+            text-align: right;
+        }
+        #head2two > div{
+            margin: 10px;
+        }
+        #head2oneone>img{
+         width: 180px;
+         margin: 20px;
+         height: 70px;
+        }
+        .line {
+                border: solid 1px rgb(197, 194, 194);
+                height: 20px;
+
+                margin: 5px 10px;
+            }
+            #sec{
+               
+                border: 0px;
+                width: 130px;
+                height: 30px;
+                padding-left: 5px;
+            }
+            .s2 {
+                margin-left: 10px;
+                border: 0px;
+                width: 155px;
+                height: 35px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(78, 78, 78);
+                font-weight: bolder;
+            }
+            #s1{
+                width: 84px;
+                border: 0px;
+            }
+           /* heading end  */
       /* *{
           margin: 0;
           padding: 0;
@@ -80,10 +171,10 @@
             margin: 10px;
       }
       .whishlistproduct-img{
-          widows: 90%;
+          width: 150px;
       }
-      .whishlistproduct-img>img{
-          width:60%
+      .whishlistproduct-img >img{
+          width:80%
       }
       .whishlistcart-btn{
           border: none;
@@ -254,6 +345,82 @@ line-height: 30px;
     </style>
 </head>
 <body>
+    <div id="header">
+        <div id="head1"> 
+        <div><select style="border: 0px;"><option>Save big with app!</option></select></div>
+       
+        <div><select id="s1" >
+            <option>Language</option> 
+            <option>English</option> 
+            <option>Italiano</option>
+            <option>Deutsch</option>
+            <option>Español</option>
+            <option>Français</option>
+            <option>Português</option>
+            <option>Slovenčina</option>
+            <option>Magyar</option>
+            <option>Slovenščina</option>
+            <option>Lietuvių kalba </option>
+            <option>Svenska</option>
+        </select></div>
+        <div><select style="border: 0px;"><option>Ship to/INR</option></select></div>
+        <div><select style="border: 0ch;"><option>Supprt Center</option></select></div>
+
+        </div>
+        <div id="head2">
+            <div id="head2one">   <div id="head2oneone"><img src="https://www.shareasale.com/images/logo2016_1.jpg" alt=""></div>
+            <div id="head2onetwo"> 
+                <select id="sec">
+                    <option value="">All Categories</option>
+                    <option value="">mart Home & Garden</option>
+                    <option value="">Phones & Accessories</option>
+                    <option value="">Computers, Tablets & Accessories</option>
+                    <option value="">Wearable Devices</option>
+                    <option value="">Automobiles & Motorcycles</option>
+                    <option value="">sports & Outdoors</option>
+                    <option value="">Consumer Electronics</option>
+                    <option value="">TV Boxes & Mini PCs</option>
+                    <option value="">Toys & Hobbies</option>
+                    <option value="">Security System</option>
+                    <option value="">Fashion</option>
+                </select>
+                <div class="line"></div>
+                <input style="border: 0ch;margin-right: 0px;width: 280px;" placeholder="search by keywords" >
+                <div style="background-color: blue; width: 45px;height: 16px;padding: 8px;"><i class="fas fa-search"></i></div>
+            </div>
+            <div id="head2onethree">
+                <div id="sing_in"><i class="far fa-user" style="color: blue;margin-left: -10px;"></i>Sign in</div>
+                <div id="wishlist"><i class="far fa-heart" style="color: blue;height: 200px; margin-left: -10px;"></i>Wislist</div>
+                <div id="cart"><i class="fas fa-cart-plus" style="color: blue; margin-left: -10px;"></i>Cart</div> </div>
+            </div>
+            <div id="head2two"> 
+            <div id="head2twoone"><select class="s2"> 
+                 <option value="">Shop all Categories</option>
+                 <option value="">Local Wearhouse</option>
+                 <option value="">Smart home and Garden</option>
+                 <option value="">sports and Outdoors</option>
+                 <option value="">Customer Electronics</option>
+                 <option value="">Tv Boxes and mini piece</option>
+                 <option value="">Computers Tablest and Accessories</option>
+                 <option value="">Toys and Hobbies</option>
+                 <option value="">Phones and Accessories</option>
+                 <option value="">Automobiles and Motorcycles</option>
+                 <option value="">Wearable Devices</option>
+                 <option value="">Security System</option>
+                 <option value="">Fashion</option>
+            </select></div>
+            <div>New</div>
+            <div>Top seller</div>
+            <div>Live</div> 
+            <div>Brand</div>
+            <div>Clearence</div>
+            <div>Deal</div>
+            <div>Coupon</div>
+            <div id="student_image" style="margin-top: -1px;"><img src="https://img.gkbcdn.com/s3/c/2106/20210623141003631student.png"></div>
+        </div>
+    </div>
+
+       <!-- heading end -->
     <div class="whishlist-cont">
          <div class="whislist-image">
              <img src="https://img.gkbcdn.com/s3/bn/2112/1500x125-61b9a47a2b40c914d0d322b4.jpg" alt="">
@@ -294,9 +461,9 @@ line-height: 30px;
                    
                </div>
                <div class="whishlist-product">
-                      <div class="whishlistproduct">
+                      <!-- <div class="whishlistproduct">
                             <div class="whishlistproduct-img">
-                                <img src="https://img.gkbcdn.com/p/2022-01-12/8e568bb4219e486bbaa9eb8956c1be98-493435-0._w280_.jpg" alt="">
+                                <img src="https://img.gkbcdn.com/p/2020-07-21/walkingpad-treadmill-r1-smart-folding-walking-and-running-machine-1595324388511._w280_p1_.jpg" alt="">
                             </div>
                             <div class="whishlist-product-details">P1 Webcam 1080P with Microphone Auto Focus Light Correction For Windows PC Mac Laptop Desktop - Black</div>
                             <div>
@@ -329,8 +496,8 @@ line-height: 30px;
                         <div>
                             <button class="whishlistcart-btn">Add to Cart</button>
                         </div>
-                  </div>
-                  <div class="whishlistproduct">
+                     </div>
+                    <div class="whishlistproduct">
                     <div class="whishlistproduct-img">
                         <img src="https://img.gkbcdn.com/p/2022-01-12/8e568bb4219e486bbaa9eb8956c1be98-493435-0._w280_.jpg" alt="">
                     </div>
@@ -338,8 +505,8 @@ line-height: 30px;
                     <div>
                         <button class="whishlistcart-btn">Add to Cart</button>
                     </div>
-              </div>
-              <div class="whishlistproduct">
+                   </div>
+                 <div class="whishlistproduct">
                     <div class="whishlistproduct-img">
                         <img src="https://img.gkbcdn.com/p/2022-01-12/8e568bb4219e486bbaa9eb8956c1be98-493435-0._w280_.jpg" alt="">
                     </div>
@@ -347,7 +514,7 @@ line-height: 30px;
                     <div>
                         <button class="whishlistcart-btn">Add to Cart</button>
                     </div>
-              </div>
+                   </div>
               <div class="whishlistproduct">
                 <div class="whishlistproduct-img">
                     <img src="https://img.gkbcdn.com/p/2022-01-12/8e568bb4219e486bbaa9eb8956c1be98-493435-0._w280_.jpg" alt="">
@@ -365,7 +532,16 @@ line-height: 30px;
                 <div>
                     <button class="whishlistcart-btn">Add to Cart</button>
                 </div>
-          </div>
+              </div>
+              <div class="whishlistproduct">
+                <div class="whishlistproduct-img">
+                    <img src="https://img.gkbcdn.com/p/2022-01-12/8e568bb4219e486bbaa9eb8956c1be98-493435-0._w280_.jpg" alt="">
+                </div>
+                <div class="whishlist-product-details">P1 Webcam 1080P with Microphone Auto Focus Light Correction For Windows PC Mac Laptop Desktop - Black</div>
+                <div>
+                    <button class="whishlistcart-btn">Add to Cart</button>
+                </div>
+               </div> -->
                </div>
          </div>
     </div>
@@ -491,4 +667,46 @@ line-height: 30px;
 
    </div>
 </body>
+  <script>
+       document.querySelector("#sing_in").addEventListener("click" , function(){
+        window.location.href="login.html";
+    })
+    document.querySelector("#wishlist").addEventListener("click" , function(){
+        window.location.href="wishlistNew.html";
+    })
+    document.querySelector("#cart").addEventListener("click" , function(){
+        window.location.href="cart.html";
+    })
+        
+         var wishlistarr = JSON.parse(localStorage.getItem("wishlistitems"));
+         console.log(wishlistarr);
+            displaywishlist(wishlistarr);
+         
+           function displaywishlist(wishlistarr){
+                  wishlistarr.map(function(a){
+                      var DIV = document.createElement("div");
+                      DIV.setAttribute("class","wishlistproduct");
+
+                      var Div1= document.createElement("div");
+                      Div1.setAttribute("class","wishlistproduct-img");
+                      var Img = document.createElement("img");
+                      Img.setAttribute("src", a.image_url);
+                      Div1.append(Img);
+
+                        var Div2= document.createElement("div");
+                        Div2.setAttribute("class","wishlist-product-details");
+                        Div2.textContent=a.name;
+
+                        var Div3=document.createElement("div");
+                        var Btn = document.createElement("button");
+                        Btn.setAttribute("class","whishlistcart-btn");
+                        Btn.textContent="Add to Cart";
+                        Div3.append(Btn);
+
+                        DIV.append(Div1,Div2,Div3);
+                        document.querySelector(".whishlist-product").append(DIV);
+                  });
+           }
+
+  </script>
 </html>
