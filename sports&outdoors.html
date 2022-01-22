@@ -373,10 +373,10 @@ line-height: 30px;
         <div id="head2">
             <div id="head2one">   <div id="head2oneone"><h1>greekbuying</h1></div>
             <div id="head2onetwo"> 
-                <select style="border:0px;">
+                <select id="cat" onclick="myfunction()" style="border:0px;">
                     <option value="">All Categories</option>
                     <option value="">mart Home & Garden</option>
-                    <option value="">Phones & Accessories</option>
+                    <option value="Phones & Accessories">Phones & Accessories</option>
                     <option value="">Computers, Tablets & Accessories</option>
                     <option value="">Wearable Devices</option>
                     <option value="">Automobiles & Motorcycles</option>
@@ -396,7 +396,7 @@ line-height: 30px;
                 <div id="cart"><i class="fas fa-cart-plus" style="color: blue;"></i>Cart</div> </div>
             </div>
             <div id="head2two"> 
-            <div id="head2twoone"><select style="border: 0px;"> 
+            <div id="head2twoone"><select id="cat2" onclick="myfunc()" style="border: 0px;"> 
                  <option value="">Shop all Categories</option>
                  <option value="">Local Wearhouse</option>
                  <option value="">Smart home and Garden</option>
@@ -405,7 +405,7 @@ line-height: 30px;
                  <option value="">Tv Boxes and mini piece</option>
                  <option value="">Computers Tablest and Accessories</option>
                  <option value="">Toys and Hobbies</option>
-                 <option value="">Phones and Accessories</option>
+                 <option value="Phones & Accessories">Phones and Accessories</option>
                  <option value="">Automobiles and Motorcycles</option>
                  <option value="">Wearable Devices</option>
                  <option value="">Security System</option>
@@ -622,6 +622,26 @@ line-height: 30px;
         window.location.href="cart.html";
     })
     //   click function end
+
+    function  myfunction(){
+        var x = document.querySelector("#cat").value;
+        console.log(x);
+
+        if(x=="Phones & Accessories"){
+            window.location.href = "Phones&Accessories.html"
+        }
+       
+    }
+
+    
+    function  myfunc(){
+        var x2 = document.querySelector("#cat2").value;
+        console.log(x2);
+
+        if(x2=="Phones & Accessories"){
+            window.location.href = "Phones&Accessories.html"
+        }
+    }
 
     productdata = [
         {
