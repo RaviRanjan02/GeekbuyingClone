@@ -24,7 +24,7 @@
             margin-left: 100px;
             margin-bottom: 50px;
         }
-        button {
+        #button {
             background-color: orange;
             padding: 2%;
             width: 90px;
@@ -45,9 +45,20 @@
     <div id="otp_top">
         <div class="otp_box">
             <h2>Enter Your OTP</h2>
-            <input type="Number" placeholder="Enter OTP"/>
-            <span><button>Submit</button></span>
+            <form>
+            <input id="otp" type="Number" placeholder="Enter OTP"/>
+            <span><input type="submit" id="button" value="Submit" ></span>
+            </form>
         </div>
     </div>
 </body>
+<script>
+       document.querySelector("form").addEventListener("submit",function(e){
+            e.preventDefault();
+            var otp = document.querySelector("#otp").value;
+            if(otp==1234){
+                alert("payment successful");
+            }
+       });
+</script>
 </html>
