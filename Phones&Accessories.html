@@ -7,11 +7,10 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/08db62848f.js" crossorigin="anonymous"></script>
     <style>
-           #header{
+          #header{
             width: 100%;
             height: 130px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         }
         #head1{
             height: 30px;
@@ -34,7 +33,7 @@
             display: flex;
         }
         #head2oneone{
-            width: 25%;
+            width: 29%;
             text-align: right;
             margin-top: -20px;
             padding-right: 20px;
@@ -42,14 +41,15 @@
         }
         #head2onetwo{
             display: flex;
-            width: 35%;
-            border: 2px solid blue;
+            width: 40%;
+            border: 1px solid blue;
             margin: 8px 0px;
         }
         #head2onethree{
             padding: 10px;
-            width: 25%;
+            width: 20%;
             justify-content: space-around;
+            margin-top: 10px;
             margin-right: 120px;
             margin-left: 100px;
         }
@@ -65,6 +65,37 @@
         #head2two > div{
             margin: 10px;
         }
+        #head2oneone>img{
+         width: 180px;
+         margin: 20px;
+         height: 70px;
+        }
+        .line {
+                border: solid 1px rgb(197, 194, 194);
+                height: 20px;
+
+                margin: 5px 10px;
+            }
+            #sec{
+               
+                border: 0px;
+                width: 130px;
+                height: 30px;
+                padding-left: 5px;
+            }
+            .s2 {
+                margin-left: 10px;
+                border: 0px;
+                width: 155px;
+                height: 35px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(78, 78, 78);
+                font-weight: bolder;
+            }
+            #s1{
+                width: 84px;
+                border: 0px;
+            }
   /* ..........body section ..................*/
 
         #container{
@@ -349,7 +380,7 @@ line-height: 30px;
         <div id="head1"> 
         <div><select style="border: 0px;"><option>Save big with app!</option></select></div>
        
-        <div><select style="border: 0px;" >
+        <div><select id="s1" >
             <option>Language</option> 
             <option>English</option> 
             <option>Italiano</option>
@@ -368,36 +399,37 @@ line-height: 30px;
 
         </div>
         <div id="head2">
-            <div id="head2one">   <div id="head2oneone"><h1>greekbuying</h1></div>
+            <div id="head2one">   <div id="head2oneone"><img src="https://www.shareasale.com/images/logo2016_1.jpg" alt=""></div>
             <div id="head2onetwo"> 
-                <select id="cat" onclick="myfunction()" style="border:0px;">
+                <select id="sec">
                     <option value="">All Categories</option>
                     <option value="">mart Home & Garden</option>
                     <option value="">Phones & Accessories</option>
                     <option value="">Computers, Tablets & Accessories</option>
                     <option value="">Wearable Devices</option>
                     <option value="">Automobiles & Motorcycles</option>
-                    <option value="sports & Outdoors">sports & Outdoors</option>
+                    <option value="">sports & Outdoors</option>
                     <option value="">Consumer Electronics</option>
                     <option value="">TV Boxes & Mini PCs</option>
                     <option value="">Toys & Hobbies</option>
                     <option value="">Security System</option>
                     <option value="">Fashion</option>
                 </select>
-                <input style="border: 0ch;" placeholder="search by keywords" >
-                <div style="background-color: blue; width: 90px;height: 15px;padding: 8px;"><i class="fas fa-search"></i></div>
+                <div class="line"></div>
+                <input style="border: 0ch;margin-right: 0px;width: 280px;" placeholder="search by keywords" >
+                <div style="background-color: blue; width: 45px;height: 16px;padding: 8px;"><i class="fas fa-search"></i></div>
             </div>
             <div id="head2onethree">
-                <div id="sign_in"><i class="far fa-user" style="color: blue;"></i>Sign in</div>
-                <div id="wishlist"><i class="far fa-heart" style="color: blue;height: 200px;"></i>Wislist</div>
-                <div id="cart"><i class="fas fa-cart-plus" style="color: blue;"></i>Cart</div> </div>
+                <div id="sing_in"><i class="far fa-user" style="color: blue;margin-left: -10px;"></i>Sign in</div>
+                <div id="wislist"><i class="far fa-heart" style="color: blue;height: 200px; margin-left: -10px;"></i>Wislist</div>
+                <div id="cart"><i class="fas fa-cart-plus" style="color: blue; margin-left: -10px;"></i>Cart</div> </div>
             </div>
             <div id="head2two"> 
-            <div id="head2twoone"><select id="cat2" onclick="myfunc()" style="border: 0px;"> 
+            <div id="head2twoone"><select class="s2"> 
                  <option value="">Shop all Categories</option>
                  <option value="">Local Wearhouse</option>
                  <option value="">Smart home and Garden</option>
-                 <option value="sports & Outdoors">sports and Outdoors</option>
+                 <option value="">sports and Outdoors</option>
                  <option value="">Customer Electronics</option>
                  <option value="">Tv Boxes and mini piece</option>
                  <option value="">Computers Tablest and Accessories</option>
@@ -600,11 +632,11 @@ line-height: 30px;
 
 <script>
         //    click function for login, wishlist, cart
-   document.querySelector("#sign_in").addEventListener("click" , function(){
+   document.querySelector("#sing_in").addEventListener("click" , function(){
         window.location.href="login.html";
     })
-    document.querySelector("#wishlist").addEventListener("click" , function(){
-        window.location.href="wishpage.html";
+    document.querySelector("#wislist").addEventListener("click" , function(){
+        window.location.href="wishlistNew.html";
     })
     document.querySelector("#cart").addEventListener("click" , function(){
         window.location.href="cart.html";
