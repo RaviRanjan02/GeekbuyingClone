@@ -174,7 +174,7 @@
           width: 150px;
       }
       .whishlistproduct-img >img{
-          width:80%
+          width:100%
       }
       .whishlistcart-btn{
           border: none;
@@ -678,23 +678,24 @@ line-height: 30px;
         window.location.href="cart.html";
     })
         
-         var wishlistarr = JSON.parse(localStorage.getItem("wishlistitems"));
+         var wishlistarr = JSON.parse(localStorage.getItem("wishlistitems"))||[];
          console.log(wishlistarr);
             displaywishlist(wishlistarr);
          
            function displaywishlist(wishlistarr){
+            document.querySelector(".whishlist-product").textContent="";
                   wishlistarr.map(function(a){
                       var DIV = document.createElement("div");
-                      DIV.setAttribute("class","wishlistproduct");
+                      DIV.setAttribute("class","whishlistproduct");
 
                       var Div1= document.createElement("div");
-                      Div1.setAttribute("class","wishlistproduct-img");
+                      Div1.setAttribute("class","whishlistproduct-img");
                       var Img = document.createElement("img");
                       Img.setAttribute("src", a.image_url);
                       Div1.append(Img);
 
                         var Div2= document.createElement("div");
-                        Div2.setAttribute("class","wishlist-product-details");
+                        Div2.setAttribute("class","whishlist-product-details");
                         Div2.textContent=a.name;
 
                         var Div3=document.createElement("div");
