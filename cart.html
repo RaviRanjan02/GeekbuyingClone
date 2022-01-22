@@ -276,7 +276,7 @@
          
          function displaycartitem(cartarr){
             document.querySelector(".cart-item-box").textContent="";
-             cartarr.map(function(a){
+             cartarr.map(function(a,index){
                var DIV = document.createElement("div");
                DIV.setAttribute("class","cart-items"); 
              
@@ -328,6 +328,9 @@
                    Div7.setAttribute("class","cart-item-product-wishlist");
                    var DivButton = document.createElement("button");
                    DivButton.textContent="Wishlist Delete";
+                   DivButton.addEventListener("click",function(){
+              deletetask(index)
+          });
                    Div7.append(DivButton);
                   
                    DIV.append(checkDiv,Div2,Div3,Div4,Div5,Div6,Div7);
@@ -349,8 +352,16 @@
                  var subtotal =document.querySelector("#subTOTAL");
                    subtotal.textContent=`Your Subtotal: ${X}`;
                     
-
          }
+
+         function deletetask(index){
+         console.log(index);
+
+         cartarr.splice(index,1)
+         console.log(cartarr)
+         localStorage.setItem("cartitems",JSON.stringify(cartarr))
+         displaycartitem(cartarr);
+     }
 </script>
 </html>
 
