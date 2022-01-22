@@ -404,10 +404,10 @@ line-height: 30px;
         <div id="head2">
             <div id="head2one">   <div id="head2oneone"><img src="https://www.shareasale.com/images/logo2016_1.jpg" alt=""></div>
             <div id="head2onetwo"> 
-                <select id="sec">
+                <select id="sec" onclick="myfunction()">
                     <option value="">All Categories</option>
                     <option value="">mart Home & Garden</option>
-                    <option value="">Phones & Accessories</option>
+                    <option value="Phones & Accessories">Phones & Accessories</option>
                     <option value="">Computers, Tablets & Accessories</option>
                     <option value="">Wearable Devices</option>
                     <option value="">Automobiles & Motorcycles</option>
@@ -428,7 +428,7 @@ line-height: 30px;
                 <div id="cart"><i class="fas fa-cart-plus" style="color: blue; margin-left: -10px;"></i>Cart</div> </div>
             </div>
             <div id="head2two"> 
-            <div id="head2twoone"><select class="s2"> 
+            <div id="head2twoone"><select class="s2" onclick="myfunc()"> 
                  <option value="">Shop all Categories</option>
                  <option value="">Local Wearhouse</option>
                  <option value="">Smart home and Garden</option>
@@ -437,7 +437,7 @@ line-height: 30px;
                  <option value="">Tv Boxes and mini piece</option>
                  <option value="">Computers Tablest and Accessories</option>
                  <option value="">Toys and Hobbies</option>
-                 <option value="">Phones and Accessories</option>
+                 <option value="Phones & Accessories">Phones and Accessories</option>
                  <option value="">Automobiles and Motorcycles</option>
                  <option value="">Wearable Devices</option>
                  <option value="">Security System</option>
@@ -661,7 +661,7 @@ line-height: 30px;
     //   click function end
 
     function  myfunction(){
-        var x = document.querySelector("#cat").value;
+        var x = document.querySelector("#sec").value;
         console.log(x);
 
         if(x=="Phones & Accessories"){
@@ -672,7 +672,7 @@ line-height: 30px;
 
     
     function  myfunc(){
-        var x2 = document.querySelector("#cat2").value;
+        var x2 = document.querySelector(".s2").value;
         console.log(x2);
 
         if(x2=="Phones & Accessories"){
