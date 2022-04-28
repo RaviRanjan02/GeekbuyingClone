@@ -24,7 +24,7 @@ Our discipline, dedication, coordination, and cooperation helps us to complete t
 
 # Snaps of Our Website:
 
-* HomePage-@Dharm8434
+* HomePage: @Dharm8434
  
 * ![Screenshot_16](https://user-images.githubusercontent.com/91020498/165443632-f67a6009-77b2-47d9-b448-942561773ec7.png)
 
