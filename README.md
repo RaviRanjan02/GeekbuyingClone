@@ -24,56 +24,56 @@ Our discipline, dedication, coordination, and cooperation helps us to complete t
 
 # Snaps of Our Website:
 
-* HomePage: @Dharm8434
+* HomePage:
  
 * ![Screenshot_16](https://user-images.githubusercontent.com/91020498/165443632-f67a6009-77b2-47d9-b448-942561773ec7.png)
 
-* Login Page: @VikashKumarNokha
+* Login Page: 
 * ![Screenshot_40](https://user-images.githubusercontent.com/91020498/165685955-c8b53ea2-4284-470d-92f4-62146d71f7e7.png)
 
-* Sign Up Page: @VikashKumarNokha
+* Sign Up Page: 
 * ![Screenshot_39](https://user-images.githubusercontent.com/91020498/165685886-90ba9b8c-52a9-401a-9176-abd3e2217092.png)
 
 
-* Product Page: @akashbind12
+* Product Page: 
 * ![Screenshot_18](https://user-images.githubusercontent.com/91020498/165443681-1c9080fb-107d-4135-b806-bcf2c4ccdd83.png)
 
 
-* Whishlist Page: @RaviRanjan02
+* Whishlist Page: 
 * ![Screenshot_19](https://user-images.githubusercontent.com/91020498/165443745-a8e563d5-0cf7-4b46-8720-95e9b0f0c2c8.png)
 
 
-* Cart Page: @RaviRanjan02
+* Cart Page: 
 * ![Screenshot_20](https://user-images.githubusercontent.com/91020498/165443815-fab2470d-8f43-4a48-874d-9bacac007df5.png)
 
 
-* Shipping Address Page: @hinehasahu
+* Shipping Address Page: 
 * ![Screenshot_21](https://user-images.githubusercontent.com/91020498/165443870-64961110-07aa-49b5-888a-ffde06dc26d4.png)
 
 
-* Payment Page: @thezolooo
+* Payment Page: 
 * ![Screenshot_22](https://user-images.githubusercontent.com/91020498/165443920-54acf8ca-52a6-46c2-b5a2-120bfb127455.png)
 
 
 
 # Team Members and Contributors
 Ravi Ranjan
-* Github : @RaviRanjan02
+* Github : RaviRanjan02
 
 Vikash Kumar
-* Github : @VikashKumarNokha
+* Github : VikashKumarNokha
 
 Akash Bind
-* Github : @akashbind12
+* Github : akashbind12
 
 Dharmpal kumar 
-* Github : @Dharm8434
+* Github : Dharm8434
 
 Chirag jain
-* Github : @thezolooo
+* Github : thezolooo
 
 Neha Sahu
-* Github : @hinehasahu
+* Github : hinehasahu
 
 
 
