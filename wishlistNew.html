@@ -6,343 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whishlist</title>
     <script src="https://kit.fontawesome.com/08db62848f.js" crossorigin="anonymous"></script>
-    <style> 
-           #header{
-            width: 100%;
-            height: 130px;
-            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-        }
-        #head1{
-            height: 30px;
-            display: flex;
-           margin-left: 695px;
-        }
-        #head1 > div{
-            margin: 5px 20px 0px 0px;
-        }
-        #head2{
-            border-top: 1px solid rgb(242,242,242);
-            height: 100px;
-        }
-        #head2one{
-            width: 100%;
-            height: 50%;
-            display: flex;
-        }
-        #head2onethree{
-            display: flex;
-        }
-        #head2oneone{
-            width: 29%;
-            text-align: right;
-            margin-top: -20px;
-            padding-right: 20px;
-            color: royalblue;
-        }
-        #head2onetwo{
-            display: flex;
-            width: 40%;
-            border: 1px solid blue;
-            margin: 8px 0px;
-        }
-        #head2onethree{
-            padding: 10px;
-            width: 20%;
-            justify-content: space-around;
-            margin-top: 10px;
-            margin-right: 120px;
-            margin-left: 100px;
-        }
-        #head2two{
-         width: 100%;
-         height: 49%;
-         display: flex;
-        }
-        #head2twoone{
-            width: 22%;
-            text-align: right;
-        }
-        #head2two > div{
-            margin: 10px;
-        }
-        #head2oneone>img{
-         width: 180px;
-         margin: 20px;
-         height: 70px;
-        }
-        .line {
-                border: solid 1px rgb(197, 194, 194);
-                height: 20px;
-
-                margin: 5px 10px;
-            }
-            #sec{
-               
-                border: 0px;
-                width: 130px;
-                height: 30px;
-                padding-left: 5px;
-            }
-            .s2 {
-                margin-left: 10px;
-                border: 0px;
-                width: 155px;
-                height: 35px;
-                font-family: Arial, Helvetica, sans-serif;
-                color: rgb(78, 78, 78);
-                font-weight: bolder;
-            }
-            #s1{
-                width: 84px;
-                border: 0px;
-            }
-           /* heading end  */
-      /* *{
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          
-   
-      } */
-      /* .whishlist-cont{
-        font-family: Arial, Helvetica, sans-serif;
-      } */
-      .whislist-image{
-          width: 80%;
-          margin: 0 auto;
-      }
-      .whislist-image>img{
-          width: 100%;
-      }
-      .whishlist-bottom{
-          display: flex;
-          width: 80%;
-          margin: 0 auto;
-          border: 1px solid black;
-          padding: 10px;
-      }
-      .whislist-details{
-               width: 20%;
-               display: flex;
-               flex-direction: column;
-               /* padding: 8px; */
-               /* border: 1px solid red; */
-               border-right: 1px solid grey;
-               text-align: left;
-      }
-      .whishlist-account{
-          text-align: center;
-      }
-      li{
-          list-style: none;
-          margin: 5px;
-          margin-left: -10px !important;
-      }
-      li:hover{
-             color: skyblue;
-      }
-      .whishlist-account button{
-          background-color: transparent;
-          padding: 5px 30px;
-          margin: 7px;
-          outline: none;
-          border: 0.5px solid grey;
-      }
-      .whishlist-account button:hover{
-          color: skyblue;
-      }
-      .whishlist-product{
-          display: grid;
-          grid-template-columns: repeat(4,1fr);
-          grid-template-rows: repeat(2,1fr);
-          grid-gap: 5px;
-          /* justify-content: space-between; */
-          padding-left: 10px;
-      }
-      .whishlistproduct{
-            width: 180px;
-            height: 250px;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            border: 1px solid grey;
-            border-radius: 5px;
-            text-align: center;
-            margin: 10px;
-      }
-      .whishlistproduct-img{
-          width: 150px;
-      }
-      .whishlistproduct-img >img{
-          width:100%
-      }
-      .whishlistcart-btn{
-          border: none;
-          background-color: #FF9C01;
-          color: white;
-          outline: none;
-          font-size: 16px;
-          padding: 5px 30px;
-          margin-top: 20px;
-      }
-      .whishlistcart-btn:hover{
-          font-size: 18px;
-          padding: 7px 35px;
-      }
-      .whishlist-product-details{
-        font-family:"Open Sans", sans-serif ;
-        color: grey;
-        font-size: 13px;
-      }
-      
-
-      /* footer css */
-      .footer-main{
-          margin-top: 50px;
-      width: 100%;
-      padding-top: 50px;
-}
-.footer-div{
-    width: 85%;
-    margin: 10px auto;
-}
-.footer-inner{
-     width: 100%;
-     margin: 0px auto;
-     height: 400px;
-     display: flex;
-     justify-content: space-between;
-}
-.footer-inner>div{
-   
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-.footer-inner>div>div:nth-child(1){
-    height: 15%;
-}
-
-.footer-popular{
-    width: 100%;
-    display: flex;
-    margin: 10px auto;
-}
-.footer-popular>div{
-    margin: 5px;
-    background-color: rgb(219, 217, 217);
-    border-radius: 3px;
-    padding: 3px;
-    color: grey;
-}
-.footer-popular>div:hover{
-    color: blue;
-}
-
-.footer-input>input{
-    width: 70%;
-    padding: 5px 0px;
-    margin-right: 0px;
-    border-radius: 3px;
-}
-.footer-input>button{
-    padding: 5px 15px;
-    background-color: #074EA3;
-    color: #ffff;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    border-radius: 3px;
     
-}
-.footer-copyright>p{
-    margin-top: 10px;
-    padding: 5px;
-    color: rgb(105, 104, 104);
-}
-.footer-copyright{
-    background-color:#202020;
-    text-align: center;
-    height: 30px;
-    
-    
-}
-.footer-payment{
-    display: flex;
-    
-}
-.footer-lang>p{
-text-align: center;
-color: rgb(187, 185, 185);
-}
-.footer-right-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-}
-
-.footer-right-top-left{
-    display: flex;
-}
-.footer-right-top-left>div{
-    margin-right: 20px;
-    margin-top: 10px;
-}
-.footer-right-top-left>div>img{
-    width: 20px;
-    height: 20px;
-}
-.footer-right-top-right{
-    display: flex;
-}
-.footer-right-top-right>div{
-    margin-right: 25px;
-    margin-top: 5px;
-    justify-content: center;
-    text-align: center;
-}
-.footer-right-top-right>div>img{
-    width: 20px;
-    height: 20px;
-}
-.footer-right-top-right>div>span{
-    display: block;
-}
-.footer-right-bottom{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: left;
-
-}
-.footer-right-bottom-left>p:hover{
-    color: rgb(72, 72, 253);
-}
-.footer-right-bottom-center>p:hover{
-    color: rgb(72, 72, 253);
-}
-.footer-right-bottom-right>p:hover{
-    color: rgb(72, 72, 253);
-}
-.footer-left-bottom>p{
-color: rgb(136, 135, 135);
-font-family: "Open Sans", sans-serif;
-font-size: 12px;
-line-height: 30px;
-
-}
-.footer-right-top-right>div>p{
-    line-height: 0px;
-
-}
-.footer-right-top-right>div>p:hover{
-    color: blue;
-}
-.footer-right-top-left>div>img:hover{
-    width: 23px;
-    height: 23px;
-}
-    </style>
+    <link rel="stylesheet" href="./wishlist.css">
 </head>
 <body>
     <div id="header">
@@ -386,12 +51,12 @@ line-height: 30px;
                 </select>
                 <div class="line"></div>
                 <input style="border: 0ch;margin-right: 0px;width: 280px;" placeholder="search by keywords" >
-                <div style="background-color: blue; width: 45px;height: 16px;padding: 8px;"><i class="fas fa-search"></i></div>
+                <div style="font-size: 20px; margin: 7px;"><i class="fas fa-search"></i></div>
             </div>
             <div id="head2onethree">
-                <div id="sing_in"><i class="far fa-user" style="color: blue;margin-left: -10px;"></i>Sign in</div>
-                <div id="wishlist"><i class="far fa-heart" style="color: blue;height: 200px; margin-left: -10px;"></i>Wislist</div>
-                <div id="cart"><i class="fas fa-cart-plus" style="color: blue; margin-left: -10px;"></i>Cart</div> </div>
+                <div id="sing_in"><i class="far fa-user fa-2x" style="color: blue;margin-left: -10px;cursor: pointer;"></i>Sign in</div>
+                <div id="wishlist"><i class="far fa-heart fa-2x" style="color: blue;height: 200px; margin-left: -10px;cursor: pointer;"></i>Wislist</div>
+                <div id="cart"><i class="fas fa-cart-plus fa-2x" style="color: blue; margin-left: -10px;cursor: pointer;"></i>Cart</div> </div>
             </div>
             <div id="head2two"> 
             <div id="head2twoone"><select class="s2" onclick="myfunc()"> 
@@ -421,6 +86,8 @@ line-height: 30px;
     </div>
 
        <!-- heading end -->
+
+       <!-- whishlist product starts here  -->
     <div class="whishlist-cont">
          <div class="whislist-image">
              <img src="https://img.gkbcdn.com/s3/bn/2112/1500x125-61b9a47a2b40c914d0d322b4.jpg" alt="">
@@ -545,6 +212,11 @@ line-height: 30px;
                </div>
          </div>
     </div>
+    
+<!-- whishlist product ends here  -->
+
+    <!-- footer section -->
+    
     <div class="footer-main">
         <div class="footer-div">
             <div class="footer-inner">
@@ -581,9 +253,6 @@ line-height: 30px;
                         </div>
                         <div>
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeB2AoeJlkzKOVRWqC6SMiZB34yKHcRFufoyM7zbz3i0cEAYe0hOtex9I9PYS6w-aBliM&usqp=CAU"/>
-                        </div>
-                        <div>
-                            <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-twitter-1.png">
                         </div>
                        </div>
                        <div class="footer-right-top-right">
@@ -622,7 +291,7 @@ line-height: 30px;
                         <p>Student discount</p>
                         <p>Youth discount</p>
                         <p>Request a sample</p>
-
+    
                     </div>
                     <div class="footer-right-bottom-right">
                         <h4>Policies</h4>
@@ -631,7 +300,7 @@ line-height: 30px;
                        <p>Privacy</p>
                        <p>Declration</p>
                        <p>Customs</p>
-
+    
                     </div>
                    </div> 
                     
@@ -664,87 +333,10 @@ line-height: 30px;
         <p>Copyright © 2012-2022 GeekBuying.com. All rights reserved.</p>
          </div>
         </div>
-
-   </div>
-</body>
-  <script>
-
-function  myfunction(){
-        var x = document.querySelector("#sec").value;
-        console.log(x);
-
-        if(x=="Phones & Accessories"){
-            window.location.href = "Phones&Accessories.html"
-        }
-        if(x=="sports & Outdoors"){
-            window.location.href = "sports&outdoors.html"
-        }
-    }
-
     
-    function  myfunc(){
-        var x2 = document.querySelector(".s2").value;
-        console.log(x2);
-
-        if(x2=="Phones & Accessories"){
-            window.location.href = "Phones&Accessories.html"
-        }
-        if(x2=="sports & Outdoors"){
-            window.location.href = "sports&outdoors.html"
-        }
-    }
-
-
-       document.querySelector("#sing_in").addEventListener("click" , function(){
-        window.location.href="login.html";
-    })
-    document.querySelector("#wishlist").addEventListener("click" , function(){
-        window.location.href="wishlistNew.html";
-    })
-    document.querySelector("#cart").addEventListener("click" , function(){
-        window.location.href="cart.html";
-    })
-         var cartarr = JSON.parse(localStorage.getItem("cartitems"))||[]
-         var wishlistarr = JSON.parse(localStorage.getItem("wishlistitems"))||[];
-         console.log(wishlistarr);
-            displaywishlist(wishlistarr);
-         
-           function displaywishlist(wishlistarr){
-            document.querySelector(".whishlist-product").textContent="";
-                  wishlistarr.map(function(a){
-                      var DIV = document.createElement("div");
-                      DIV.setAttribute("class","whishlistproduct");
-
-                      var Div1= document.createElement("div");
-                      Div1.setAttribute("class","whishlistproduct-img");
-                      var Img = document.createElement("img");
-                      Img.setAttribute("src", a.image_url);
-                      Div1.append(Img);
-
-                        var Div2= document.createElement("div");
-                        Div2.setAttribute("class","whishlist-product-details");
-                        Div2.textContent=a.name;
-
-                        var Div3=document.createElement("div");
-                        var Btn = document.createElement("button");
-                        Btn.setAttribute("class","whishlistcart-btn");
-                        Btn.textContent="Add to Cart";
-                        Div3.append(Btn);
-                        Btn.addEventListener("click",function(){
-                            addtocart(a);
-                               });
-
-                        DIV.append(Div1,Div2,Div3);
-                        document.querySelector(".whishlist-product").append(DIV);
-                  });
-           }
-
-           function addtocart(a){
-//   console.log(a);
-  cartarr.push(a);
-  localStorage.setItem("cartitems",JSON.stringify(cartarr));
-  alert("added to cart successfully")
-}
-
-  </script>
+    </div> 
+</body>
 </html>
+
+<!-- JavaScript external file import -->
+<script src="./wishlist.js"></script>

@@ -1,65 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTP</title>
-    <style>
-        body {
-            background-image:url(https://img.gkbcdn.com/s3/bn/2111/1920x680-619327822b40c9253c42c6a0.jpg);
-            background-repeat:no-repeat;
-        }
-        .otp_box {
-            border: 1px solid rgb(199, 197, 197);
-            margin: 100px auto;
-            width: 30%;
-            height: 150px;
-            padding: 2%;
-            background-color: white;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border-radius: 5px;
-        }
-        h2 {
-            margin-left: 100px;
-            margin-bottom: 50px;
-        }
-        #button {
-            background-color: orange;
-            padding: 2%;
-            width: 90px;
-            border-radius: 5px;
-            color: white;
-            margin-left: 10px;
-        }
-        input {
-            padding: 2%;
-            border-radius: 4px;
-            border: 1px solid grey;
-            margin-left:  40px;
-        }
-    </style>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./otp.css" />
+  </head>
+  <body>
     <div id="otp_top">
-        <div class="otp_box">
-            <h2>Enter Your OTP</h2>
-            <form>
-            <input id="otp" type="Number" placeholder="Enter OTP"/>
-            <span><input type="submit" id="button" value="Submit" ></span>
-            </form>
-        </div>
+      <div class="otp_box">
+        <h2>Enter Your OTP</h2>
+        <!-- otp form start here -->
+        <form>
+          <input id="otp" type="Number" placeholder="Enter OTP" />
+          <span><input type="submit" id="button" value="Submit" /></span>
+        </form>
+      </div>
     </div>
-</body>
-<script>
-       document.querySelector("form").addEventListener("submit",function(e){
-            e.preventDefault();
-            var otp = document.querySelector("#otp").value;
-            if(otp==1234){
-                alert("payment successful");
-                window.location.href='success2.html';
-            }
-       });
-</script>
+  </body>
+ 
 </html>
+
+<!-- JavaScript external file import -->
+<script src="./otp.js"></script>

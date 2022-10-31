@@ -1,0 +1,32 @@
+body {
+  background-image: url(https://img.gkbcdn.com/s3/bn/2111/1920x680-619327822b40c9253c42c6a0.jpg);
+  background-repeat: no-repeat;
+}
+.otp_box {
+  border: 1px solid rgb(199, 197, 197);
+  margin: 100px auto;
+  width: 30%;
+  height: 150px;
+  padding: 2%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+h2 {
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+#button {
+  background-color: orange;
+  padding: 2%;
+  width: 90px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 10px;
+}
+input {
+  padding: 2%;
+  border-radius: 4px;
+  border: 1px solid grey;
+  margin-left: 40px;
+}

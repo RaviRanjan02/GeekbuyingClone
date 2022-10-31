@@ -1,0 +1,35 @@
+body{
+    background-image:url(//img.gkbcdn.com/s3/bn/2111/1920x680-619327822b40c9253c42c6a0.jpg)
+    }
+    #container{
+        width: 350px;
+        /* border: 1px solid red; */
+        padding: 40px;
+        margin: 50px auto;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        margin-top: 25px;
+        /* padding-left: 10px; */
+    }
+    button{
+        width: 100%;
+        height: 40px;
+        margin-top: 25px;
+        
+    }
+    #submit{
+        background-color: #F1C40F;
+        border: 0px;
+        color: white;
+        
+    }
+    .check{
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+        
+    }

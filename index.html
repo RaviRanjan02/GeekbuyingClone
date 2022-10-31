@@ -4,399 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>GeekBuying.Com</title>
     <script src="https://kit.fontawesome.com/08db62848f.js" crossorigin="anonymous"></script>
-    <style>
-        #header{
-            width: 100%;
-            height: 130px;
-            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-        }
-        #head1{
-            height: 30px;
-            display: flex;
-           margin-left: 695px;
-        }
-        #head1 > div{
-            margin: 5px 20px 0px 0px;
-        }
-        #head2{
-            border-top: 1px solid rgb(242,242,242);
-            height: 100px;
-        }
-        #head2one{
-            width: 100%;
-            height: 50%;
-            display: flex;
-        }
-        #head2onethree{
-            display: flex;
-        }
-        #head2oneone{
-            width: 29%;
-            text-align: right;
-            margin-top: -20px;
-            padding-right: 20px;
-            color: royalblue;
-        }
-        #head2onetwo{
-            display: flex;
-            width: 40%;
-            border: 1px solid blue;
-            margin: 8px 0px;
-        }
-        #head2onethree{
-            padding: 10px;
-            width: 20%;
-            justify-content: space-around;
-            margin-top: 10px;
-            margin-right: 120px;
-            margin-left: 100px;
-        }
-        #head2two{
-         width: 100%;
-         height: 49%;
-         display: flex;
-        }
-        #head2twoone{
-            width: 22%;
-            text-align: right;
-        }
-        #head2two > div{
-            margin: 10px;
-        }
-        #head2oneone>img{
-         width: 180px;
-         margin: 20px;
-         height: 70px;
-        }
-        .line {
-                border: solid 1px rgb(197, 194, 194);
-                height: 20px;
 
-                margin: 5px 10px;
-            }
-            #sec{
-               
-                border: 0px;
-                width: 130px;
-                height: 30px;
-                padding-left: 5px;
-            }
-            #productpage {
-                margin-left: 10px;
-                border: 0px;
-                width: 155px;
-                height: 35px;
-                font-family: Arial, Helvetica, sans-serif;
-                color: rgb(78, 78, 78);
-                font-weight: bolder;
-            }
-            #s1{
-                width: 84px;
-                border: 0px;
-            }
-       
-        #boxon{
-            width: 78%;
-            height: 320px;
-            margin-left: 150px;
-            display: grid;
-            grid-template-columns: repeat(12,1fr);
-            grid-template-rows: 150px,170px;
-            grid-template-areas: 
-            "a a a a a a a a a b b b"
-            "a a a a a a a a a c c c";
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-        }
-        #box_one{
-            grid-area: a;
-            margin: 10px;
-            background-color: white;
-        }
-        #imageone{
-            width: 100%;
-            height: 100%;
-        }
-        #box_two{
-            grid-area: b;
-            margin: 10px;
-        } 
-        #imagetwo{
-            width: 100%;
-            height: 100%;
-        }
-        #box_three{
-            grid-area: c;
-            margin: 10px;
-        } #imagethree{
-            width: 100%;
-            height: 100%;
-        }
-      #boxtwo{
-            width: 78%;
-            height: 280px;
-            margin: 20px 0px 20px 150px;
-            display: flex;     
-           
-      }
-      #box_2one{
-          width: 24%;
-          margin-right: 15px;
-          height: 100%;
-          border-top: 2px solid blue;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-      }
-      #box_2one > img{
-        width: 100%;
-        height: 80%;
-      }
-      #box_2two{
-          width: 24%;
-          margin-right: 15px;
-          height: 100%;
-          border-top: 2px solid red;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-      }
-      #box_2two > img{
+    <!-- index css exyernal stylesheet imported here -->
+    <link rel="stylesheet" href="./index.css">
 
-        width: 100%;
-        height: 80%;
-      }
-      #box_2three{
-          width: 24%;
-          margin-right: 15px;
-          height: 100%;
-          border-top: 2px solid green;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-      }
-      #box_2three > img{
-        width: 100%;
-        height: 80%;
-      } #box_2four{
-          width: 24%;
-          height: 100%;
-          border-top: 2px solid brown;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-      }
-      #box_2four > img{
-        width: 100%;
-        height: 80%;
-      }
-      #boxthree{
-            width: 78%;
-            height: 280px;
-            margin: 20px 0px 20px 150px;
-            display: flex;  
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-           }
-          #boxthree > div{
-              width: 23%;
-              height: 93%;
-              margin: 10px;
-              
-          }
-          #boxthree > div > img{
-              width: 100%;
-              height: 60%;
-          }
-          #boxthree > div > h3,h5,h4{
-              margin-top: -5px;
-              margin-left: 20px;
-            
-          }
-          #boxthree > div > h4{
-              background-color: red;
-              margin-right: 80px;
-          }
-          #boxfour{
-            width: 78%;
-            height: 280px;
-            margin: 0px 0px 20px 150px;
-            display: flex;  
-           }
-           #boxfour > div{
-               width: 24%;
-               height: 100%;
-               margin: 10px 10px 10px 0px;
-               margin-top: -2px;
-               box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-           }
-          #boxfour > div >h4{
-              text-align: center;
-           margin-top: 0px;
-           margin-bottom: 3px;
-          }
-          #boxfour > div >img{
-          width: 100%;
-          height: 75%;
-          }
-          #boxfive{
-            width: 78%;
-            height: 300px;
-            margin: 20px 0px 20px 150px;
-            display: flex;  
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-           }
-           #boxfive > div >img{
-          width: 100%;
-          height: 60%;
-          }
-          #boxfive > div > h3,h5,h4{
-              margin-top: -5px;
-              margin-left: 20px;
-          }
-          #boxfive >div>h3{
-              color: red;
-          }
-            /* footer section  */
-
-            .footer-main{
-      width: 100%;
-      padding-top: 50px;
-}
-.footer-div{
-    width: 85%;
-    margin: 10px auto;
-}
-.footer-inner{
-     width: 100%;
-     margin: 0px auto;
-     height: 400px;
-     display: flex;
-     justify-content: space-between;
-}
-.footer-inner>div{
-   
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-.footer-inner>div>div:nth-child(1){
-    height: 15%;
-}
-
-.footer-popular{
-    width: 100%;
-    display: flex;
-    margin: 10px auto;
-}
-.footer-popular>div{
-    margin: 5px;
-    background-color: rgb(219, 217, 217);
-    border-radius: 3px;
-    padding: 3px;
-    color: grey;
-}
-.footer-popular>div:hover{
-    color: blue;
-}
-
-.footer-input>input{
-    width: 70%;
-    padding: 5px 0px;
-    margin-right: 0px;
-    border-radius: 3px;
-}
-.footer-input>button{
-    padding: 5px 15px;
-    background-color: #074EA3;
-    color: #ffff;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    border-radius: 3px;
-    
-}
-.footer-copyright>p{
-    margin-top: 10px;
-    padding: 5px;
-    color: rgb(105, 104, 104);
-}
-.footer-copyright{
-    background-color:#202020;
-    text-align: center;
-    height: 30px;
-    
-    
-}
-.footer-payment{
-    display: flex;
-    
-}
-.footer-lang>p{
-text-align: center;
-color: rgb(187, 185, 185);
-}
-.footer-right-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-}
-
-.footer-right-top-left{
-    display: flex;
-}
-.footer-right-top-left>div{
-    margin-right: 20px;
-    margin-top: 10px;
-}
-.footer-right-top-left>div>img{
-    width: 20px;
-    height: 20px;
-}
-.footer-right-top-right{
-    display: flex;
-}
-.footer-right-top-right>div{
-    margin-right: 25px;
-    margin-top: 5px;
-    justify-content: center;
-    text-align: center;
-}
-.footer-right-top-right>div>img{
-    width: 20px;
-    height: 20px;
-}
-.footer-right-top-right>div>span{
-    display: block;
-}
-.footer-right-bottom{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: left;
-}
-.footer-right-bottom-left>p:hover{
-    color: rgb(72, 72, 253);
-}
-.footer-right-bottom-center>p:hover{
-    color: rgb(72, 72, 253);
-}
-.footer-right-bottom-right>p:hover{
-    color: rgb(72, 72, 253);
-}
-.footer-left-bottom>p{
-color: rgb(136, 135, 135);
-font-family: "Open Sans", sans-serif;
-font-size: 12px;
-line-height: 30px;
-}
-.footer-right-top-right>div>p{
-    line-height: 0px;
-
-}
-.footer-right-top-right>div>p:hover{
-    color: blue;
-}
-.footer-right-top-left>div>img:hover{
-    width: 23px;
-    height: 23px;
-}
-    </style>
 </head>
 <body>
-    <div id="header">
+
+<!-- header starts -->
+    
+<div id="header">
         <div id="head1"> 
         <div><select style="border: 0px;"><option>Save big with app!</option></select></div>
        
@@ -437,12 +56,12 @@ line-height: 30px;
                 </select>
                 <div class="line"></div>
                 <input style="border: 0ch;margin-right: 0px;width: 280px;" placeholder="search by keywords" >
-                <div style="background-color: blue; width: 45px;height: 16px;padding: 8px;"><i class="fas fa-search"></i></div>
+                <div style="font-size: 20px; margin: 7px;"><i class="fas fa-search"></i></div>
             </div>
             <div id="head2onethree">
-                <div id="sing_in"><i class="far fa-user" style="color: blue;"></i>Sign in</div>
-                <div id="wishlist"><i class="far fa-heart" style="color: blue;height: 200px;"></i>Wislist</div>
-                <div id="cart"><i class="fas fa-cart-plus" style="color: blue;"></i>Cart</div> </div>
+                <div id="sing_in"><i class="far fa-user fa-2x" style="color: blue; cursor: pointer;"></i>Sign in</div>
+                <div id="wishlist"><i class="far fa-heart fa-2x"    style="color: blue;height: 200px;cursor: pointer;"></i>Wislist</div>
+                <div id="cart"><i class="fas fa-cart-plus fa-2x" style="color: blue; cursor: pointer;"></i>Cart</div> </div>
             </div>
             <div id="head2two"> 
             <div id="head2twoone">
@@ -472,7 +91,10 @@ line-height: 30px;
             <div id="student_image" style="margin-top: -1px;"><img src="https://img.gkbcdn.com/s3/c/2106/20210623141003631student.png"></div>
         </div>
     </div>
-    <div id="boxon"> 
+
+<!-- product cards starts here-->
+    
+<div id="boxon"> 
     <div id="box_one">
         <img id="imageone" onclick="window.location.href='sports&outdoors.html'" src="https://img.gkbcdn.com/s3/bn/2201/1090x422-61d7fafd2b40c91ab8d5c69d.jpg">
     </div>
@@ -508,7 +130,9 @@ line-height: 30px;
     <div id="boxfour"></div>
     <div id="boxfive"></div>
 
-        <!-- footer section   -->
+<!-- product cards ends here-->
+
+<!-- footer section   -->
 
         <div class="footer-main">
             <div class="footer-div">
@@ -546,9 +170,6 @@ line-height: 30px;
                             </div>
                             <div>
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeB2AoeJlkzKOVRWqC6SMiZB34yKHcRFufoyM7zbz3i0cEAYe0hOtex9I9PYS6w-aBliM&usqp=CAU"/>
-                            </div>
-                            <div>
-                                <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-twitter-1.png">
                             </div>
                            </div>
                            <div class="footer-right-top-right">
@@ -633,181 +254,7 @@ line-height: 30px;
        </div>
 </body>
 </html>
-<script>
-     document.querySelector("#sing_in").addEventListener("click" , function(){
-        window.location.href="login.html";
-    })
-    document.querySelector("#wishlist").addEventListener("click" , function(){
-        window.location.href="wishlistNew.html";
-    })
-    document.querySelector("#cart").addEventListener("click" , function(){
-        window.location.href="cart.html";
-    })
-    //   var selectvalue = document.querySelector("#productpage");
-    //      var nnn= selectvalue.value;
-    //      console.log(nnn);
-    // document.querySelector("#productpage").addEventListener("change" , function(){
-    //     window.location.href="selectvalue";
-    // })
 
-    function  myfunction(){
-        var x = document.querySelector("#sec").value;
-        console.log(x);
+<!-- JavaScript external file import -->
 
-        if(x=="Phones & Accessories"){
-            window.location.href = "Phones&Accessories.html"
-        }
-        if(x=="sports & Outdoors"){
-            window.location.href = "sports&outdoors.html"
-        }
-    }
-
-    function  myfunc(){
-        var x2 = document.querySelector("#productpage").value;
-        console.log(x2);
-
-        if(x2=="Phones & Accessories"){
-            window.location.href = "Phones&Accessories.html"
-        }
-        if(x2=="sports & Outdoors"){
-            window.location.href = "sports&outdoors.html"
-        }
-    }
-   
-   
-
-
-   var  productdata = [
-        {
-            image_url: "https://img.gkbcdn.com/p/2018-10-25/xiaomi-aqara-temperature-humidity-sensor-white-1574132919397._w280_p1_.jpg",
-            price: 38475.04,
-            strikedoffprice : 62816.89 ,
-            discount: "$24% Off",
-        },
-        {
-            image_url: "https://img.gkbcdn.com/p/2017-07-26/xiaomi-wifi-amplifier-pro-black-1574132393616._w280_p1_.jpg" ,
-           
-            price: 39260.26 ,
-            strikedoffprice : 49468.14 ,
-           discount: "$26% Off",
-        },
-        {
-            image_url: "https://img.gkbcdn.com/p/2019-08-27/tronsmart-t2-plus-20w--bluetooth-5-0-speaker-tws-1571994588089._w280_p1_.jpg" ,
-            price: 24341.07 ,
-            strikedoffprice : 36119.38 ,
-            discount: "$21% Off",
-        },
-        {
-            image_url: "https://img.gkbcdn.com/p/2019-01-31/tronsmart-element-force-portable-bluetooth-speaker-1571993707403._w280_p1_.jpg" ,
-            price: 83814.49,
-            strikedoffprice : 117782.36,
-            discount: "$9% Off",
-        },
-        {
-            image_url: "https://img.gkbcdn.com/p/2021-12-09/3-7V-108-Lamp-Beads-Solar-Wall-Lamp-480326-0._w280_p1_.jpg" ,
-            price: 83814.49,
-            strikedoffprice : 117782.36,
-            discount: "9% Off",
-        },
-    ];
-
-    productdata.map(function(elem){
-     var div = document.createElement("div");
-    var image = document.createElement("img");
-    image.setAttribute("src",elem.image_url);
-    var p = document.createElement("h3")
-    p.textContent=elem.price;
-    var Dp = document.createElement("h5");
-    Dp.textContent = elem.strikedoffprice;
-    var dis = document.createElement("h4");
-    dis.textContent = elem.discount
-    div.append(image ,p,Dp ,dis );
-    document.querySelector("#boxthree").append(div);
-    })
-
-    var  product = [
-        {
-            image_url: "https://img.gkbcdn.com/s3/bn/2201/461146-61d3a90b2b40c9181491b951.jpg",
-            price: "Tronsmart T6 Pro",
-            dis :"Patented SoundPulse technology,three EQ effects,up to 24 hours playtime " ,
-           
-        },
-        {
-            image_url: "https://img.gkbcdn.com/s3/bn/2201/481993-61d3a93c2b40c9181491b952.jpg" ,
-           
-            price: "Wlyoys RC Car ",
-           dis: "independent 60A ESC, up to 75km/h, aliminum alloy body",
-        },
-        {
-            image_url:" https://img.gkbcdn.com/s3/bn/2201/472275-61d3a8a42b40c9181455eb2e.jpg" ,
-            price: "Eleglide D1 Off-road E-Scooter",
-            dis: "10'' pneumatic tires, 500W motor,48V 18A battery,45/h max speed",
-        },
-        {
-            image_url: "https://img.gkbcdn.com/s3/bn/2201/459892-61d3a8d72b40c9181455eb2f.jpg" ,
-            price: "ACGAM B1-402 Treadmill",
-            dis: "Jogging & running 2 in 1, installation-free built-in Bluetooth speaker",
-        },
-     
-    ];
-product.map(function(elem){
-    var div = document.createElement("div")
-    var p = document.createElement("h4")
-    p.textContent=elem.price;
-    var image = document.createElement("img")
-    image.setAttribute("src",elem.image_url)
-    var pone = document.createElement("h5")
-    pone.textContent=elem.dis
-    div.append(p,image,pone);
-   document.querySelector("#boxfour").append(div);
-})
-
-
-var  data = [
-        {
-            image_url: "https://img.gkbcdn.com/p/2022-01-13/Mijia-MUL11-Faucet-Water-Filter-Purifier-493442-0._w280_p1_.jpg",
-            price: "$38475.04",
-            strikedoffprice : "$62816.89" ,
-            discount: "Xiaomi Mijia MUL11 Faucet Water Filter Purifier 0.1um",
-        },
-        {
-            image_url: "https://img.gkbcdn.com/p/2022-01-05/Kospet-Rock-Bluetooth-Smartwatch-1-69-Inch-Rectangle-Black-492533-0._w280_p1_.jpg" ,
-           
-            price: "$39260.26" ,
-            strikedoffprice : "$49468.14" ,
-           discount: "Kospet Rock Outdoor Bluetooth Smartwatch 1.69 Inch",
-        },
-        {
-            image_url: "https://img.gkbcdn.com/p/2021-12-30/25m-roll-15mm-Wide-1mm-Thick-Rubber-Magnet-Tape-490024-0._w280_p1_.jpg" ,
-            price: "$24341.07" ,
-            strikedoffprice : "$36119.38" ,
-            discount: "25/roll 15mm Wide*1mm Thick Self Adhesive Flexible",
-        },
-        {
-            image_url: "https://img.gkbcdn.com/p/2022-01-11/8BitDo-SN30-Pro-Bluetooth-Game-Controller-493147-0._w280_p1_.jpg" ,
-            price: "$83814.49",
-            strikedoffprice : "$117782.36",
-            discount: "8BitDo SN30 Pro Bluetooth Game Countroller for Xbox",
-        },
-        {
-            image_url: "https://img.gkbcdn.com/p/2022-01-07/gub-af02-telescopic-bicycle-fender-black-4e646e-1641518558421._w280_p1_.jpg" ,
-            price: "$83814.49",
-            strikedoffprice : "$117782.36",
-            discount: "ADO A20F Ebike Plastic Fenders Mudguard 1Pair",
-        },
-    ];
-    data.map(function(elem){
-        var div = document.createElement("div");
-    var image = document.createElement("img");
-    image.setAttribute("src",elem.image_url);
-    var p = document.createElement("h3")
-    p.textContent=elem.price;
-    var Dp = document.createElement("h5");
-    Dp.textContent = elem.strikedoffprice;
-    var dis = document.createElement("h4");
-    dis.textContent = elem.discount
-    div.append(image ,dis,p,Dp  );
-    document.querySelector("#boxfive").append(div);
-    })
-
-</script>
+<script src="./index.js"></script>

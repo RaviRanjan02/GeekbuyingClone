@@ -1,112 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>checkout page</title>
-    <style>
-         #imgcontainer{
-            background-image:url(https://img.gkbcdn.com/s3/bn/2111/1920x680-619327822b40c9253c42c6a0.jpg);
-            background-repeat: no-repeat;
-            border: 1px solid white;
-            height: 600px;
-        }
-        #maincontainer{
-            border: 1px solid white;
-          
-        }
-       #upcontainer{
-           border: 1px solid white;
-           width: 20%;
-           height: 100px;
-           padding: 20px;
-           margin: 10px auto;
-           background-color: white;
-           border-radius: 5px;
-           /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-       } 
-       #upcontainer>img{
-           width: 100%;
-           height: 100%;
-       }
-      #container{
-          width: 20%;
-          margin: 60px auto;
-          padding: 20px;
-          border: 1px solid white;
-          border-radius: 5px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          /* border: 1px solid red; */
-          background-color: white;
-
-      }
-      input{
-          width : 100%;
-          margin-top: 30px;
-          height: 35px;
-        
-      }
-      button{
-        width : 100%;
-          margin-top: 30px;
-          height: 35px;
-          border: 0px;
-          background-color: #F5B041;  
-      }
-      div{
-          text-align: center;
-        
-      }
-      h2{
-         padding: 0px; 
-         margin-bottom: 0px;
-      }
-     
-    </style>
-</head>
-<body>
-  <div id="maincontainer">
-    <div id="upcontainer" >
-        <img onclick="window.location.href='index.html'" src="https://content1.geekbuying.com/V1.4/en/images/index_images/new_geekbuy.png" alt="">
+    <link rel="stylesheet" href="./chcekout.css" />
+  </head>
+  <body>
+    <div id="maincontainer">
+      <div id="upcontainer">
+        <img
+          onclick="window.location.href='index.html'"
+          src="https://www.shareasale.com/images/logo2016_1.jpg"
+          alt=""
+        />
+      </div>
     </div>
-  </div>
-   <div id="imgcontainer">
-    <div id="container">
+    <!-- card details section starts here -->
+    <div id="imgcontainer">
+      <div id="container">
         <h2>Enter your card details</h2>
-        <input id="name" type="text" placeholder="Enter Name">
-        <input id="card" type="number" placeholder="Enter card Number">
-        <input id="cvv" type="number" placeholder="CVV">
-        <input id="date" type="text" placeholder="Enter Expiry Date">
-     
+        <input id="name" type="text" placeholder="Enter Name" />
+        <input id="card" type="number" placeholder="Enter card Number" />
+        <input id="cvv" type="number" placeholder="CVV" />
+        <input id="date" type="text" placeholder="Enter Expiry Date" />
+
         <button onclick="checkout()">Checkout</button>
+      </div>
     </div>
-   </div>
-   
-</body>
+  </body>
 </html>
-
-<script>
-             function checkout(){
-                 alert("All Data Correct");
-                 window.location.href='OTPnew.html';
-             }
-       
-    // function checkout(){
-    //     var name = document.querySelector("#name").value;
-    //     var card = document.querySelector("#card").value;
-    //     var cvv = document.querySelector("#cvv").value;
-    //     var date = document.querySelector("#date").value;
-    //      console.log(name,card,cvv,date);
-
-    //     if(name=="akash" && card=="4321" && cvv=="123" && date=="12/24"){
-    //        alert("Payment successfull")
-    //         window.location.href = "success2.html";
-
-    //     }
-    //     else{
-    //         alert("Wrong details")
-    //     }
-    // }
-
-</script>
+<!-- JavaScript external file import -->
+<script src="./checkout.js"></script>
